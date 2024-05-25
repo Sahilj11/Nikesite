@@ -2,267 +2,145 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
   overflow-x: hidden;
 }
-
-.mouse {
-  background-color: rgba(32, 27, 21, 0.315);
-  filter: blur(10px);
-  width: 200px;
-  height: 260px;
-  border-radius: 50%;
-  z-index: 1;
-  position: absolute;
-}
-body {
-  perspective: 800px;
-}
-.nav-style {
+nav{
   display: flex;
-  padding-inline: 1rem;
   justify-content: space-between;
-  align-items: center;
-
-  /* background: black; */
-  color: white;
-  font-family: Oswald;
-  font-weight: 400;
-}
-.nav-list {
-  display: flex;
-  list-style: none;
-  overflow: hidden;
-}
-svg {
-  height: 50px;
-  width: 50px;
-}
-li {
-  margin-inline: 50px;
-  font-size: 1.4vw;
-  color: black;
-  cursor: pointer;
-  overflow: hidden;
-}
-.logo {
-  width: 7vw;
-  height: 7vh;
-}
-
-.icons {
-  /* border: 1px solid red; */
-  padding-right: 2vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
-}
-.btn {
-  background-color: rgba(212, 207, 207, 0.518);
-  border-radius: 19px;
-  cursor: pointer;
-  padding: 0.5rem 4rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: none;
-}
-.btn i {
-  font-size: 1.3rem;
-  position: relative;
-}
-i {
-  font-size: 1.5rem;
-  color: black;
-}
-.main {
-  /* background-color: yellow; */
-  width: 100%;
-  height: 10%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.video-div {
-  margin-top: 1rem;
-  height: 50%;
-  width: 100%;
-  /* border: 1px solid red; */
-}
-video {
-  height: 52vh;
+  background-color: #151444;
+  position: fixed;
   width: 100vw;
-  object-fit: cover;
+  color: white;
 }
-.heading {
-  /* border: 1px solid red; */
-  width: 40%;
-  padding: 2rem;
+nav img{
+  width: 100px;
+  height: 60px;
 }
-.heading h1 {
+nav h1 ,i{
+  padding: 20px;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+nav h1{
+  letter-spacing: 5px;
+}
+.wraper{
+  width: 100vw;
+  height: 100vh;
+}
+.page1{
+  background-color: #151444;  
+  width: 100vw;
+  height: 100vh;
+}
+.one{
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  bottom: 100px;
+  transform: rotate(60deg);
+}
+.two{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 200px;
+  right: 20px;
+  transform: rotate(260deg);
+}
+.three{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  transform: rotate(-30deg);
+ 
+}
+.four{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 320px;
+  right: 700px;
+  transform: rotate(-30deg);
+  
+}
+.text{
+  color: white;
+  /* background-color: red; */
+  position: absolute;
+  top:250px;
+  left:640px;
+  font-size: 50px;
   font-family: Oswald;
   font-weight: 500;
-  color: black;
+  letter-spacing: 10px;
+  z-index: 2;
 }
-.heading p {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  color: black;
-  font-family: Oswald;
-  font-weight: 300;
-}
-.Explore {
-  width: fit-content;
-  margin-top: 1rem;
-}
-.Explore button {
-  padding: 0.5rem 2rem;
-  background-color: black;
-  color: white;
-  border-radius: 16px;
-  cursor: pointer;
-  font-size: 1rem;
-  border: none;
-}
-/* product section */
-.product {
-  /* background-color: green; */
-  background-color: rgba(145, 142, 142, 0.174);
+.page2{
+  height: 87vh;
   width: 100vw;
-  height: 100%;
+  background-color: #151444;
+  
+}
+.air{
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-.product-cards {
-  /* background-color: green; */
-  padding: 2vw;
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-.card {
-  /* border: 1px solid red; */
-  width: 30%;
-  height: auto;
-  overflow-y: hidden;
-  overflow: hidden;
-  margin-bottom: 1.4vw;
-  transition: all 0.7s;
-}
-.card:hover {
-  transform: rotate3d(1, 1, 0, 20deg);
-  opacity: 0.7;
-}
-.card img {
-  width: 25vw;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 10px;
-}
-.content {
-  display: flex;
   flex-direction: column;
-  margin-top: 0.8vw;
+  align-items: center;
 }
-
-.brand {
-  font-size: 1.1vw;
+.air h1{
+  font-size: 80px;
   font-family: Oswald;
+  font-weight: 500;
+  color: #343292;
+  letter-spacing: 4px;
+ 
 }
-.mens-section {
-  font-size: 1.1vw;
-  font-family: Oswald;
+.page3{
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
 }
-.color {
-  font-size: 1.1vw;
-  font-family: Oswald;
+#mainshoes{
+  width: 220px;
+  height: 220px;
+  transform: rotate(45deg);
+  
 }
-.price {
-  font-size: 1.1vw;
-  font-family: Oswald;
+.ri-menu-3-line{
+  color: white;
+  padding-right: 60px;
+  
 }
-.title {
-  font-size: 1.7vw;
-  color: rgb(97, 97, 38);
-  font-family: Oswald;
+.full{
+  height: 100vh;
+  width: 40%;
+  background-color: #25247342;
+  position: absolute;
+  top:0;
+  right: -40%;
+  backdrop-filter: blur(20px);
+  padding: 150px 60px;
 }
-
-._canvas_container {
-  z-index: 9999999 !important;
-  pointer-events: none;
-}
-#page2{
-  min-height: 100vh;
-  width: 100%;
-  padding: 5vw 0;
-  background-color: rgba(22, 22, 22, 0.642);
-  position: relative;
-}
-.elm{
-  /* background-color: red; */
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-.elm h1{
-  font-size: 4vw;
-  -webkit-text-stroke: 1px  #fff;
+.full h4 {
+  font-size: 50px;
   font-weight: 400;
-  color: transparent;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-right: 10px;
-  animation-name: anime;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  font-family: Oswald;
+  margin-bottom: 10px;
+  color: white;
 }
-.elm2{
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-@keyframes anime {
-  from{
-      transform: translateX(0);
-  }
-  to{
-      transform: translateX(calc(-100% - 10px));
-  }
-}
-
-.elm{
-  /* background-color: red; */
-  white-space: nowrap;
-  overflow-x: hidden;
-}
-.elm2 h1{
-  font-size: 4vw;
-  -webkit-text-stroke: 1px  #fff;
-  font-weight: 400;
-  color: transparent;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-right: 10px;
-  animation-name: anime2;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  transform: translateX(-100%);
-  animation-name: anime;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
+.full i{
+  position: absolute;
+  top:5%;
+  right: 10%;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  color: black;
 }
