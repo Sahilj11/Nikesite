@@ -40,12 +40,12 @@ i {
 }
 
 .hero-section {
-    background-color: #151444;
+    background: linear-gradient(to bottom ,#3432AA 23%,#151444);
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-areas: "leftShoes midShoe rightShoes";
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;
     align-items: center;
 }
@@ -55,45 +55,51 @@ i {
 }
 
 .left-shoe-1 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     position: relative;
-    top: 7rem;
+    top: 9rem;
     grid-area: leftShoes;
     transform: rotate(60deg);
 }
 
 .left-shoe-2 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom: 8rem;
+    left: 2rem;
     grid-area: leftShoes;
-    transform: rotate(260deg);
+    transform: rotate(-200deg);
 }
 
 .right-shoe-1 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     grid-area: rightShoes;
     transform: rotate(-30deg);
 }
-
 .center-blue-shoe {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    position: relative;
+    width: 350px;
+    height: 350px;
     transform: rotate(-30deg);
+    position: fixed;
+    left: 35%;
+    bottom: 15%;
+    right: 60px;
     z-index: 2;
 }
 
 .hero-tag-line {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
+    text-align: center;
     color: white;
     /* background-color: red; */
     font-size: 74px;
     font-weight: bolder;
+    letter-spacing: 10px;
+    background-image: linear-gradient(to right , #343292 ,#B6A7F5);
+    background-clip: text;
+    color: transparent;
     z-index: 2;
 }
 
@@ -134,7 +140,6 @@ i {
     color: white;
     padding-right: 40px;
 }
-
 .full {
     height: 100vh;
     width: 40%;
@@ -144,6 +149,7 @@ i {
     right: -40%;
     backdrop-filter: blur(20px);
     padding: 150px 60px;
+    z-index: 5;
 }
 
 .full h4 {
