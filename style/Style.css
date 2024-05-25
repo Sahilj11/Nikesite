@@ -1,146 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
 }
-body{
-  overflow-x: hidden;
+
+body {
+    overflow-x: hidden;
 }
-nav{
-  display: flex;
-  justify-content: space-between;
-  background-color: #151444;
-  position: fixed;
-  width: 100vw;
-  color: white;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    position: fixed;
+    margin: 10px;
+    width: 100vw;
+    color: white;
 }
-nav img{
-  width: 100px;
-  height: 60px;
+
+nav h1,
+i {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
 }
-nav h1 ,i{
-  padding: 20px;
-  font-family: Oswald;
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
+
+.nike-headline {
+    font-size: 2.4rem;
 }
-nav h1{
-  letter-spacing: 5px;
+
+.nike-logo {}
+
+.wraper {
+    width: 100vw;
+    height: 100vh;
 }
-.wraper{
-  width: 100vw;
-  height: 100vh;
+
+.hero-section {
+    background-color: #151444;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "leftShoes midShoe rightShoes";
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
-.page1{
-  background-color: #151444;  
-  width: 100vw;
-  height: 100vh;
+
+.center-hero-tag {
+    grid-area: midShoe;
 }
-.one{
-  width: 200px;
-  height: 200px;
-  position:absolute;
-  bottom: 100px;
-  transform: rotate(60deg);
+
+.left-shoe-1 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 7rem;
+    grid-area: leftShoes;
+    transform: rotate(60deg);
 }
-.two{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  bottom: 200px;
-  right: 20px;
-  transform: rotate(260deg);
+
+.left-shoe-2 {
+    width: 200px;
+    height: 200px;
+    grid-area: leftShoes;
+    transform: rotate(260deg);
 }
-.three{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 100px;
-  transform: rotate(-30deg);
- 
+
+.right-shoe-1 {
+    width: 200px;
+    height: 200px;
+    grid-area: rightShoes;
+    transform: rotate(-30deg);
 }
-.four{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 320px;
-  right: 700px;
-  transform: rotate(-30deg);
-  
+
+.center-blue-shoe {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    transform: rotate(-30deg);
+    z-index: 2;
 }
-.text{
-  color: white;
-  /* background-color: red; */
-  position: absolute;
-  top:250px;
-  left:640px;
-  font-size: 50px;
-  font-family: Oswald;
-  font-weight: 500;
-  letter-spacing: 10px;
-  z-index: 2;
+
+.hero-tag-line {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    color: white;
+    /* background-color: red; */
+    font-size: 74px;
+    font-weight: bolder;
+    z-index: 2;
 }
-.page2{
-  height: 87vh;
-  width: 100vw;
-  background-color: #151444;
-  
+
+.page2 {
+    height: 87vh;
+    width: 100vw;
+    background-color: #151444;
 }
-.air{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+
+.air {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.air h1{
-  font-size: 80px;
-  font-family: Oswald;
-  font-weight: 500;
-  color: #343292;
-  letter-spacing: 4px;
- 
+
+.air h1 {
+    font-size: 80px;
+    /*font-family: Oswald;*/
+    font-weight: 500;
+    color: #343292;
+    letter-spacing: 4px;
 }
-.page3{
-  height: 100vh;
-  width: 100vw;
-  background-color: red;
+
+.page3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
 }
-#mainshoes{
-  width: 220px;
-  height: 220px;
-  transform: rotate(45deg);
-  
+
+#mainshoes {
+    width: 220px;
+    height: 220px;
+    transform: rotate(45deg);
 }
-.ri-menu-3-line{
-  color: white;
-  padding-right: 60px;
-  
+
+.ri-menu-3-line {
+    color: white;
+    padding-right: 40px;
 }
-.full{
-  height: 100vh;
-  width: 40%;
-  background-color: #25247342;
-  position: absolute;
-  top:0;
-  right: -40%;
-  backdrop-filter: blur(20px);
-  padding: 150px 60px;
+
+.full {
+    height: 100vh;
+    width: 40%;
+    background-color: #25247342;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    backdrop-filter: blur(20px);
+    padding: 150px 60px;
 }
+
 .full h4 {
-  font-size: 50px;
-  font-weight: 400;
-  font-family: Oswald;
-  margin-bottom: 10px;
-  color: white;
+    font-size: 50px;
+    font-weight: 400;
+    /*font-family: Oswald;*/
+    margin-bottom: 10px;
+    color: white;
 }
-.full i{
-  position: absolute;
-  top:5%;
-  right: 10%;
-  background-color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 5px;
-  color: black;
+
+.full i {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    color: black;
 }
