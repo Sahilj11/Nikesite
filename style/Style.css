@@ -28,7 +28,6 @@ i {
     font-size: 30px;
     font-weight: 700;
     color: white;
-    
 }
 
 .nike-headline {
@@ -43,8 +42,7 @@ i {
 }
 
 .hero-section {
-    background: linear-gradient(to bottom ,#3432AA 23%,#151444);
-    width: 100vw;
+    background: linear-gradient(to bottom, #3432aa 23%, #151444);
     height: 100vh;
     display: grid;
     grid-template-areas: "leftShoes midShoe rightShoes";
@@ -56,7 +54,6 @@ i {
 .center-hero-tag {
     grid-area: midShoe;
     z-index: 100;
-    
 }
 
 .left-shoe-1 {
@@ -83,15 +80,15 @@ i {
     height: 250px;
     grid-area: rightShoes;
     transform: rotate(-30deg);
-    
 }
+
 .center-blue-shoe {
     width: 350px;
     height: 350px;
     transform: rotate(-30deg);
     position: fixed;
     left: 35%;
-    bottom: 15%;
+    bottom: 4%;
     right: 60px;
     z-index: 2;
 }
@@ -103,37 +100,33 @@ i {
     font-size: 74px;
     font-weight: bolder;
     letter-spacing: 10px;
-    background-image: linear-gradient(to right , #343292 ,#B6A7F5);
+    background-image: linear-gradient(to right, #343292, #b6a7f5);
     background-clip: text;
     color: transparent;
-   
 }
 
-.page2 {
-    height: 87vh;
-    width: 100vw;
-    background-color: #151444;
-    
-}
-
-.air {
+.product-detail-page {
     display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: #151444;
+}
+
+.blue-shoe-div {
+    display: flex;
+    gap: 8px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
 }
 
-.air h1 {
+.blue-shoe-div h1 {
     font-size: 80px;
-    /*font-family: Oswald;*/
-    font-weight: 500;
-    color: #343292;
-    letter-spacing: 4px;
-    z-index: 101;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #343292, #b6a7f5);
+    background-clip: text;
+    color: transparent;
 }
-
-
 
 #mainshoes {
     width: 220px;
@@ -145,6 +138,7 @@ i {
     color: white;
     padding-right: 40px;
 }
+
 .full {
     height: 100vh;
     width: 40%;
@@ -154,13 +148,12 @@ i {
     right: -40%;
     backdrop-filter: blur(20px);
     padding: 150px 60px;
-    z-index: 5;
+    z-index: 500;
 }
 
 .full h4 {
     font-size: 50px;
     font-weight: 400;
-    /*font-family: Oswald;*/
     margin-bottom: 10px;
     color: white;
 }
@@ -175,21 +168,25 @@ i {
     padding: 5px;
     color: black;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-.arrow{
-    /* background-color: red; */
+
+.arrow {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
-.arrow i{
+
+.arrow i {
     font-weight: 100;
     border: 1px solid white;
     padding: 1rem;
     border-radius: 50%;
     z-index: 99;
 }
+
 .sidepage {
     height: 100vh;
     width: 100%;
@@ -197,7 +194,8 @@ i {
     position: absolute;
     right: -110%;
 }
-#crossarrow{
+
+#crossarrow {
     background-color: transparent;
     color: #9796de;
 }
