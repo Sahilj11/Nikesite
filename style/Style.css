@@ -42,7 +42,7 @@ i {
 }
 
 .hero-section {
-    background: linear-gradient(to bottom, #3432aa 23%, #151444);
+    background: linear-gradient(to bottom, #3432aa 24%, #151444);
     height: 100vh;
     display: grid;
     grid-template-areas: "leftShoes midShoe rightShoes";

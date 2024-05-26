@@ -6,7 +6,7 @@ var nav = document.querySelector("nav")
 var tl =  gsap.timeline({paused:true})
 tl.to(".full",{
     right:"0",
-    duration:0.5
+    duration:0.4
 })
 tl.from(".full h4",{
     x:150,
