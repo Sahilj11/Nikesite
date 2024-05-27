@@ -4,6 +4,7 @@ let rightarrow = document.querySelector(".ri-arrow-right-line")
 var leftarr = document.getElementById("leftarrow")
 var nav = document.querySelector("nav")
 var tl =  gsap.timeline({paused:true})
+
 tl.to(".full",{
     right:"0",
     duration:0.4
@@ -61,3 +62,44 @@ leftarr.addEventListener("click",function(){
      
 })
 
+tl.to(".centerfirst #heading",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#heading",
+        scroller:"body",
+        
+        start:"top -80%",
+        end:"top 40%",
+        scrub:5,
+    },
+   
+})
+
+tl.to(".secondcard #head",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#head",
+        scroller:"body",
+      
+        start:"top -80%",
+        end:"top 40%",
+        scrub:5,
+    },
+    
+})
+
+tl.to(".thirdcard #headingthird",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#headingthird",
+        scroller:"body",
+        start:"top -80%",
+        end:"top 40%",
+        scrub:5,
+    },
+    
+   
+})

@@ -228,3 +228,72 @@ i {
     background-color: transparent;
     color: #9796de;
 }
+/* section 3 code */
+
+.section3{
+    width: 100vw;
+    height:100vh;
+    padding: 3rem;
+}
+.card{
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    
+}
+
+.centerfirst{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.firstcard img{
+    width: 35%;
+    height: 90%;
+    
+}
+.firstcard h1{
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+
+.centersecond{
+    border: 1px solid transparent;
+    display: flex;
+
+    justify-content: space-around;
+}
+.secondcard img{
+    width: 35%;
+    height: 90%;
+   
+}
+.secondcard h1{
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+
+.centerthird{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.thirdcard img{
+    width: 35%;
+    height: 90%;
+}
+.thirdcard h1{
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
