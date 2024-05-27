@@ -4,6 +4,7 @@ let cross = document.querySelector(".full i")
 let rightarrow = document.querySelector(".ri-arrow-right-line")
 var leftarr = document.getElementById("leftarrow")
 var nav = document.querySelector("nav")
+let sideMenu = document.querySelector(".full")
 var tl =  gsap.timeline({paused:true})
 
 tl.to(".full",{
@@ -12,7 +13,7 @@ tl.to(".full",{
 })
 tl.from(".full h4",{
     x:150,
-    duration:0.6,
+    duration:0.3,
     stagger:0.3,
     opacity:0
 })
@@ -104,6 +105,7 @@ tl.to(".thirdcard #headingthird",{
     
    
 })
+
 gsap.to(".center-blue-shoe",{
     y:60,
     scrollTrigger:{
