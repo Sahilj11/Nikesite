@@ -128,7 +128,10 @@ i {
     color: transparent;
     z-index: 200;
 }
-
+.center-blue-shoeStop{
+    position:absolute;
+    top:135vh;
+}
 #mainshoes {
     width: 220px;
     height: 220px;
@@ -144,7 +147,7 @@ i {
     height: 100vh;
     width: 40%;
     background-color: #2524731f;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -40%;
     backdrop-filter: blur(20px);
@@ -188,8 +191,6 @@ i {
     z-index: 99;
     cursor: pointer;
 }
-
-
 .sidepage {
     height: 100vh;
     width: 100%;
@@ -201,12 +202,12 @@ i {
 .sidepage2 {
     height: 100vh;
     width: 100%;
-    background-color:black;
+    background-color: black;
     position: absolute;
     /* right: -110%; */
     opacity: 0;
 }
-#blackshoe{
+#blackshoe {
     width: 350px;
     height: 350px;
     transform: rotate(-30deg);
@@ -215,7 +216,7 @@ i {
     bottom: 4%;
     right: 60px;
 }
-.redshoe{
+.redshoe {
     width: 350px;
     height: 350px;
     transform: rotate(-30deg);
@@ -229,32 +230,31 @@ i {
     color: #9796de;
 }
 /* section 3 code */
-
-.section3{
+.section3 {
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     padding: 3rem;
 }
-.card{
+.card {
     /* background-color: red; */
     width: 100vw;
     height: 100vh;
     position: sticky;
     top: 0;
-    
 }
 
-.centerfirst{
+.centerfirst {
     border: 1px solid transparent;
     display: flex;
     justify-content: space-around;
 }
-.firstcard img{
+
+.firstcard img {
     width: 35%;
     height: 90%;
-    
 }
-.firstcard h1{
+
+.firstcard h1 {
     padding: 2rem;
     /* border: 2px solid green; */
     width: 30%;
@@ -262,18 +262,19 @@ i {
     line-height: 2.5rem;
 }
 
-.centersecond{
+.centersecond {
     border: 1px solid transparent;
     display: flex;
 
     justify-content: space-around;
 }
-.secondcard img{
+
+.secondcard img {
     width: 35%;
     height: 90%;
-   
 }
-.secondcard h1{
+
+.secondcard h1 {
     padding: 2rem;
     /* border: 2px solid green; */
     width: 30%;
@@ -281,16 +282,18 @@ i {
     line-height: 2.5rem;
 }
 
-.centerthird{
+.centerthird {
     border: 1px solid transparent;
     display: flex;
     justify-content: space-around;
 }
-.thirdcard img{
+
+.thirdcard img {
     width: 35%;
     height: 90%;
 }
-.thirdcard h1{
+
+.thirdcard h1 {
     padding: 2rem;
     /* border: 2px solid green; */
     width: 30%;
