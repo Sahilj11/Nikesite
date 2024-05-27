@@ -42,7 +42,7 @@ i {
 }
 
 .hero-section {
-    background: linear-gradient(to bottom, #3432aa 23%, #151444);
+    background: linear-gradient(to bottom, #3432aa 24%, #151444);
     height: 100vh;
     display: grid;
     grid-template-areas: "leftShoes midShoe rightShoes";
@@ -126,6 +126,7 @@ i {
     background-image: linear-gradient(to right, #343292, #b6a7f5);
     background-clip: text;
     color: transparent;
+    z-index: 200;
 }
 
 #mainshoes {
@@ -185,17 +186,114 @@ i {
     padding: 1rem;
     border-radius: 50%;
     z-index: 99;
+    cursor: pointer;
 }
+
 
 .sidepage {
     height: 100vh;
     width: 100%;
     background-color: red;
     position: absolute;
-    right: -110%;
+    /* right: -110%; */
+    opacity: 0;
 }
-
+.sidepage2 {
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    position: absolute;
+    /* right: -110%; */
+    opacity: 0;
+}
+#blackshoe{
+    width: 350px;
+    height: 350px;
+    transform: rotate(-30deg);
+    position: fixed;
+    left: 34%;
+    bottom: 4%;
+    right: 60px;
+}
+.redshoe{
+    width: 350px;
+    height: 350px;
+    transform: rotate(-30deg);
+    position: fixed;
+    left: 34%;
+    bottom: 4%;
+    right: 60px;
+}
 #crossarrow {
     background-color: transparent;
     color: #9796de;
+}
+/* section 3 code */
+
+.section3{
+    width: 100vw;
+    height:100vh;
+    padding: 3rem;
+}
+.card{
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    
+}
+
+.centerfirst{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.firstcard img{
+    width: 35%;
+    height: 90%;
+    
+}
+.firstcard h1{
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+
+.centersecond{
+    border: 1px solid transparent;
+    display: flex;
+
+    justify-content: space-around;
+}
+.secondcard img{
+    width: 35%;
+    height: 90%;
+   
+}
+.secondcard h1{
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+
+.centerthird{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.thirdcard img{
+    width: 35%;
+    height: 90%;
+}
+.thirdcard h1{
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
 }
