@@ -1,8 +1,10 @@
+gsap.registerPlugin(ScrollTrigger)
 let menu = document.querySelector("nav i")
 let cross = document.querySelector(".full i")
 let rightarrow = document.querySelector(".ri-arrow-right-line")
 var leftarr = document.getElementById("leftarrow")
 var nav = document.querySelector("nav")
+let sideMenu = document.querySelector(".full")
 var tl =  gsap.timeline({paused:true})
 
 tl.to(".full",{
@@ -11,7 +13,7 @@ tl.to(".full",{
 })
 tl.from(".full h4",{
     x:150,
-    duration:0.6,
+    duration:0.3,
     stagger:0.3,
     opacity:0
 })
@@ -103,3 +105,56 @@ tl.to(".thirdcard #headingthird",{
     
    
 })
+
+gsap.to(".center-blue-shoe",{
+    y:60,
+    scrollTrigger:{
+        trigger:"#product-title",
+        start:"top center",
+        end: "top 250",
+        toggleActions:"restart none",
+        onLeave: () => {
+            document.querySelector(".center-blue-shoe").classList.add("center-blue-shoeStop");
+        },
+        onEnterBack:()=>{
+            document.querySelector(".center-blue-shoe").classList.remove("center-blue-shoeStop");
+            gsap.to(".center-blue-shoe",{y:-20})
+        }
+    }
+})
+
+let parentdiv = document.createElement("div")
+let childdiv = document.createElement("div")
+let childleftdiv =  document.createElement("div")
+let rightchild = document.createElement("div")
+parentdiv.innerHTML = "HEllo jee kase ho sare";
+parentdiv.classList.add("parentdiv")
+childdiv.classList.add("child")
+childdiv.classList.add("childleft")
+childdiv.classList.add("rightchild")
+rightchild.style.background = "pink"
+rightchild.style.width = "50%"
+childleftdiv.style.width = "50%"
+childleftdiv.style.backgroundColor = "red"
+childleftdiv.style.position = "relative"
+childdiv.style.right = "0px"
+document.body.appendChild(parentdiv)
+parentdiv.appendChild(childdiv)
+childdiv.appendChild(childleftdiv)
+childdiv.appendChild(rightchild)
+
+childleftdiv.addEventListener("mouseenter",function(){
+    childdiv.classList.add("animate")
+     childleftdiv.style.backgroundColor = "black"
+})
+childleftdiv.addEventListener("mouseleave",function(){
+    childdiv.classList.remove("animate")
+    childleftdiv.style.backgroundColor = "red"
+})
+rightchild.addEventListener("mouseenter",function(){
+    childdiv.classList.add("animateleft")
+})
+rightchild.addEventListener("mouseleave",function(){
+    childdiv.classList.remove("animateleft")
+})
+
