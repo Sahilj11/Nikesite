@@ -106,19 +106,19 @@ tl.to(".thirdcard #headingthird",{
    
 })
 
-gsap.to(".center-blue-shoe",{
-    y:60,
-    scrollTrigger:{
-        trigger:"#product-title",
-        start:"top center",
-        end: "top 250",
-        toggleActions:"restart none",
-        onLeave: () => {
-            document.querySelector(".center-blue-shoe").classList.add("center-blue-shoeStop");
-        },
-        onEnterBack:()=>{
-            document.querySelector(".center-blue-shoe").classList.remove("center-blue-shoeStop");
-            gsap.to(".center-blue-shoe",{y:-20})
-        }
-    }
-})
+//gsap.to(".center-blue-shoe",{
+//    y:60,
+//    scrollTrigger:{
+//        trigger:"#product-title",
+//        start:"top center",
+//        end: "top 250",
+//        toggleActions:"restart none",
+//        onLeave: () => {
+//            document.querySelector(".center-blue-shoe").classList.add("center-blue-shoeStop");
+//        },
+//        onEnterBack:()=>{
+//            document.querySelector(".center-blue-shoe").classList.remove("center-blue-shoeStop");
+//            gsap.to(".center-blue-shoe",{y:-20})
+//        }
+//    }
+//})
