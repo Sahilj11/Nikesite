@@ -127,15 +127,14 @@ let parentdiv = document.createElement("div")
 let childdiv = document.createElement("div")
 let childleftdiv =  document.createElement("div")
 let rightchild = document.createElement("div")
-parentdiv.innerHTML = "HEllo jee kase ho sare";
 parentdiv.classList.add("parentdiv")
 childdiv.classList.add("child")
 childdiv.classList.add("childleft")
 childdiv.classList.add("rightchild")
-rightchild.style.background = "pink"
+rightchild.style.background = "black"
 rightchild.style.width = "50%"
 childleftdiv.style.width = "50%"
-childleftdiv.style.backgroundColor = "red"
+childleftdiv.style.backgroundColor = "black"
 childleftdiv.style.position = "relative"
 childdiv.style.right = "0px"
 document.body.appendChild(parentdiv)
@@ -143,18 +142,45 @@ parentdiv.appendChild(childdiv)
 childdiv.appendChild(childleftdiv)
 childdiv.appendChild(rightchild)
 
+let cursor = document.querySelector(".cursor")
 childleftdiv.addEventListener("mouseenter",function(){
     childdiv.classList.add("animate")
-     childleftdiv.style.backgroundColor = "black"
+    
 })
 childleftdiv.addEventListener("mouseleave",function(){
     childdiv.classList.remove("animate")
-    childleftdiv.style.backgroundColor = "red"
+    
 })
 rightchild.addEventListener("mouseenter",function(){
     childdiv.classList.add("animateleft")
+    gspa.to(cursor,{
+        backgroundColor:"green",
+        opacity:1,
+    })
 })
 rightchild.addEventListener("mouseleave",function(){
     childdiv.classList.remove("animateleft")
 })
-
+document.body.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        opacity:1,
+    })
+})
+childdiv.addEventListener('mouseenter',function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        opacity:1,
+        backgroundColor:"yellow"
+    })
+})
+childdiv.addEventListener('mouseleave',function(){
+    
+    gsap.to(cursor,{
+        opacity:0,
+        backgroundColor:"transparent"
+      
+    })
+})

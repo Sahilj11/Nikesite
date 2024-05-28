@@ -301,9 +301,9 @@ i {
     line-height: 2.5rem;
 }
 .parentdiv{
-    background-color: yellow;
+    background-color: rgba(21, 15, 35, 0.735);
     position: absolute;
-    bottom: -500%;
+    bottom: -530%;
     width: 100vw;
     height: 100vh;
     margin-top: 100px;
@@ -316,6 +316,8 @@ i {
     width: 80%;
     min-width: 80%;
     border: 1px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
     height: 60%;
     display: flex;
     justify-content: space-between;
@@ -326,15 +328,21 @@ i {
 .animate{
     transition: all 1s;
     transform: skewX(3deg);
+    /* border-left: 2px solid yellow; */
+    box-shadow: -10px -10px 10px -5px rgba(194, 197, 39, 0.5)
 }
 .animateleft{
     transition: all 1s;
     transform: skewX(-3deg);
+    /* box-shadow: 0px 0px 10px green; */
+    box-shadow: 10px 10px 10px -5px rgba(194, 197, 39, 0.5)
+    
 }
 .cursor{
-    width: 50px;
-    height: 50px;
-    background-color: white;
+    width: 100px;
+    height: 100px;
+    background-color:transparent;
+    filter: blur(40px);
     position: fixed;
     border-radius: 50%;
     z-index: 1999;
