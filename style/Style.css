@@ -53,6 +53,8 @@ i {
 
 .center-hero-tag {
     grid-area: midShoe;
+    position: relative;
+    margin-top: 20%;
     z-index: 100;
 }
 
@@ -86,18 +88,20 @@ i {
     width: 350px;
     height: 350px;
     transform: rotate(-30deg);
-    position: fixed;
-    left: 35%;
-    bottom: 4%;
-    right: 60px;
     z-index: 2;
 }
-
+.blue-shoe-container{
+    display: flex;
+    justify-content: center;
+}
 .hero-tag-line {
     text-align: center;
     color: white;
     /* background-color: red; */
     font-size: 74px;
+    position:absolute;
+    left: 10%;
+    right: 10%;
     font-weight: bolder;
     letter-spacing: 10px;
     background-image: linear-gradient(to right, #343292, #b6a7f5);
