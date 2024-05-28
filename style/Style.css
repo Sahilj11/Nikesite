@@ -9,6 +9,7 @@
 
 body {
     overflow-x: hidden;
+    background: white;
 }
 
 nav {
@@ -18,8 +19,8 @@ nav {
     position: fixed;
     margin: 10px;
     width: 100vw;
-    color: white;
-    z-index: 5;
+    color: black;
+    z-index: 50;
     padding: 1rem;
 }
 
@@ -27,14 +28,13 @@ nav h1,
 i {
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 
 .nike-headline {
     font-size: 2.4rem;
 }
 
-.nike-logo {}
 
 .wraper {
     width: 100vw;
@@ -42,7 +42,7 @@ i {
 }
 
 .hero-section {
-    background: linear-gradient(to bottom, #3432aa 24%, #151444);
+    /*background: linear-gradient(to bottom, #3432aa 24%, #151444);*/
     height: 100vh;
     display: grid;
     grid-template-areas: "leftShoes midShoe rightShoes";
@@ -113,7 +113,7 @@ i {
     display: flex;
     height: 100vh;
     justify-content: center;
-    background-color: #151444;
+    /*background-color: #151444;*/
 }
 
 .blue-shoe-div {
@@ -143,7 +143,7 @@ i {
 }
 
 .ri-menu-3-line {
-    color: white;
+    color: black;
     padding-right: 40px;
 }
 

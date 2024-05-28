@@ -5,12 +5,12 @@ const tl = gsap.timeline({
         trigger: ".center-blue-shoe",
         start: "center center",
         end: "top 10%",
-        scrub: 2,
+        scrub: 4,
         pin: true,
-        //toggleActions:"restart none none none",
-        markers: {
-            fontSize: "3rem",
-        },
+        //toggleActions:"restart pause none none",
+        //markers: {
+        //    fontSize: "3rem",
+        //},
     },
 })
 tl.to(".center-blue-shoe", {
