@@ -105,20 +105,21 @@ tl.to(".thirdcard #headingthird",{
     
    
 })
-
-//gsap.to(".center-blue-shoe",{
-//    y:60,
-//    scrollTrigger:{
-//        trigger:"#product-title",
-//        start:"top center",
-//        end: "top 250",
-//        toggleActions:"restart none",
-//        onLeave: () => {
-//            document.querySelector(".center-blue-shoe").classList.add("center-blue-shoeStop");
-//        },
-//        onEnterBack:()=>{
-//            document.querySelector(".center-blue-shoe").classList.remove("center-blue-shoeStop");
-//            gsap.to(".center-blue-shoe",{y:-20})
-//        }
-//    }
-//})
+const tl4 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".center-blue-shoe",
+        start: "center center",
+        end: "top 10%",
+        scrub: 4,
+        pin: true,
+        //toggleActions:"restart pause none none",
+        //markers: {
+        //    fontSize: "3rem",
+        //},
+    },
+})
+tl4.to(".center-blue-shoe", {
+    y: 700,
+    duration:4,
+    ease:"none"
+});

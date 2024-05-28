@@ -15,7 +15,6 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    background: transparent;
     position: fixed;
     margin: 10px;
     width: 100vw;
@@ -235,16 +234,15 @@ i {
 }
 /* section 3 code */
 .section3 {
-    width: 100vw;
-    height: 100vh;
     padding: 3rem;
+    position: relative;
 }
 .card {
     /* background-color: red; */
     width: 100vw;
     height: 100vh;
     position: sticky;
-    top: 0;
+    top: 12%;
 }
 
 .centerfirst {
@@ -303,4 +301,8 @@ i {
     width: 30%;
     letter-spacing: 4px;
     line-height: 2.5rem;
+}
+.section4{
+    height: 100vh;
+    background: red;
 }
