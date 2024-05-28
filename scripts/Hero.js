@@ -173,14 +173,66 @@ childdiv.addEventListener('mouseenter',function(dets){
         x:dets.x,
         y:dets.y,
         opacity:1,
-        backgroundColor:"yellow"
+        backgroundColor:"yellow",
+        
     })
 })
 childdiv.addEventListener('mouseleave',function(){
     
     gsap.to(cursor,{
         opacity:0,
-        backgroundColor:"transparent"
-      
+        backgroundColor:"transparent",
+    })
+})
+// secodn card create
+let secondchildcard = document.createElement("div")
+let secondleft = document.createElement("div")
+let secondright =  document.createElement("div")
+
+// Append the elements
+// let newparent = document.createElement("div")
+document.body.appendChild(parentdiv)
+parentdiv.classList.add("newparent")
+parentdiv.appendChild(secondchildcard)
+secondchildcard.appendChild(secondleft)
+secondchildcard.appendChild(secondright)
+secondchildcard.classList.add("child")
+secondleft.style.backgroundColor = "black"
+secondleft.style.width = "50%"
+secondright.style.backgroundColor = "black"
+secondright.style.width = "50%"
+
+secondleft.addEventListener("mouseenter",function(){
+    secondchildcard.classList.add("animate1")
+    
+})
+secondleft.addEventListener("mouseleave",function(){
+    secondchildcard.classList.remove("animate1")
+    
+})
+secondright.addEventListener("mouseenter",function(){
+    secondchildcard.classList.add("animateleft1")
+    gspa.to(cursor,{
+        backgroundColor:"orange",
+        opacity:1,
+    })
+})
+secondright.addEventListener("mouseleave",function(){
+    secondchildcard.classList.remove("animateleft1")
+})
+secondchildcard.addEventListener('mouseenter',function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        opacity:1,
+        backgroundColor:"orange",
+        
+    })
+})
+secondchildcard.addEventListener('mouseleave',function(){
+    
+    gsap.to(cursor,{
+        opacity:0,
+        backgroundColor:"transparent",
     })
 })
