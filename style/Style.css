@@ -34,7 +34,6 @@ i {
     font-size: 2.4rem;
 }
 
-
 .wraper {
     width: 100vw;
     height: 100vh;
@@ -89,16 +88,18 @@ i {
     transform: rotate(-30deg);
     z-index: 2;
 }
-.blue-shoe-container{
+
+.blue-shoe-container {
     display: flex;
     justify-content: center;
 }
+
 .hero-tag-line {
     text-align: center;
     color: white;
     /* background-color: red; */
     font-size: 74px;
-    position:absolute;
+    position: absolute;
     left: 10%;
     right: 10%;
     font-weight: bolder;
@@ -131,10 +132,12 @@ i {
     color: transparent;
     z-index: 200;
 }
-.center-blue-shoeStop{
-    position:absolute;
-    top:135vh;
+
+.center-blue-shoeStop {
+    position: absolute;
+    top: 135vh;
 }
+
 #mainshoes {
     width: 220px;
     height: 220px;
@@ -194,6 +197,7 @@ i {
     z-index: 99;
     cursor: pointer;
 }
+
 .sidepage {
     height: 100vh;
     width: 100%;
@@ -202,6 +206,7 @@ i {
     /* right: -110%; */
     opacity: 0;
 }
+
 .sidepage2 {
     height: 100vh;
     width: 100%;
@@ -210,6 +215,7 @@ i {
     /* right: -110%; */
     opacity: 0;
 }
+
 #blackshoe {
     width: 350px;
     height: 350px;
@@ -219,6 +225,7 @@ i {
     bottom: 4%;
     right: 60px;
 }
+
 .redshoe {
     width: 350px;
     height: 350px;
@@ -228,21 +235,47 @@ i {
     bottom: 4%;
     right: 60px;
 }
+
 #crossarrow {
     background-color: transparent;
     color: #9796de;
 }
+
 /* section 3 code */
 .section3 {
     padding: 3rem;
     position: relative;
 }
+
 .card {
     /* background-color: red; */
     width: 100vw;
     height: 100vh;
     position: sticky;
-    top: 12%;
+}
+
+/*.centerfirst {*/
+/*    border: 1px solid transparent;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
+/**/
+/*.firstcard img {*/
+/*    width: 35%;*/
+/*    height: 90%;*/
+/*}*/
+/**/
+/*.firstcard h1 {*/
+/*    padding: 2rem;*/
+/*    /* border: 2px solid green; */
+*/
+/*    width: 30%;*/
+/*    letter-spacing: 4px;*/
+/*    line-height: 2.5rem;*/
+/*}*/
+
+.centersecond {
+    top: 0;
 }
 
 .centerfirst {
@@ -302,7 +335,112 @@ i {
     letter-spacing: 4px;
     line-height: 2.5rem;
 }
-.section4{
+
+.parentdiv {
+    background-color: rgba(21, 15, 35, 0.735);
+    position: absolute;
+    bottom: -540%;
+    width: 100vw;
     height: 100vh;
-    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.child {
+    width: 80%;
+    min-width: 80%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    transition: all 1s;
+    margin-top: 2rem;
+}
+
+.animate {
+    transition: all 1s;
+    transform: skewY(2deg);
+    /* border-left: 2px solid yellow; */
+    box-shadow: -10px -10px 10px -5px rgba(194, 197, 39, 0.879);
+}
+
+.animate1 {
+    transition: all 1s;
+    /* transform: skewX(3deg); */
+    transform: skewY(2deg);
+    /* border-left: 2px solid yellow; */
+    box-shadow: -10px -10px 10px -5px rgba(228, 141, 27, 0.986);
+}
+
+.animateleft {
+    transition: all 1s;
+    transform: skewY(-2deg);
+    /* box-shadow: 0px 0px 10px green; */
+    box-shadow: 10px 10px 10px -5px rgba(194, 197, 39, 0.879);
+}
+
+.animateleft1 {
+    transition: all 1s;
+    transform: skewY(-2deg);
+    /* box-shadow: 0px 0px 10px green; */
+    box-shadow: 10px 10px 10px -5px rgba(228, 141, 27, 0.986);
+}
+
+.cursor {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    filter: blur(40px);
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1999;
+    opacity: 0;
+    /* box-shadow: 0px 0px 10px orangered; */
+}
+
+.newparent {
+    /* background-color: rgba(134, 117, 172, 0.735); */
+    position: absolute;
+    /* bottom: -530%; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.centerthird {
+    .child2 {
+        width: 80%;
+        min-width: 80%;
+        border: 1px solid black;
+        border-radius: 1rem;
+        overflow: hidden;
+        height: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        transition: all 1s;
+        /* margin-top: 2rem; */
+    }
+}
+
+.section4 {
+    background-color: rgba(105, 61, 209, 0.735);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    bottom: -340%;
+    padding: 1px;
+}
+
+.content {
+    margin-top: 3rem;
 }

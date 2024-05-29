@@ -70,7 +70,6 @@ tl.to(".centerfirst #heading",{
     scrollTrigger:{
         trigger:"#heading",
         scroller:"body",
-        
         start:"top -80%",
         end:"top 40%",
         scrub:5,
@@ -105,7 +104,123 @@ tl.to(".thirdcard #headingthird",{
     
    
 })
-const tl4 = gsap.timeline({
+
+
+let parentdiv = document.createElement("div")
+let childdiv = document.createElement("div")
+let childleftdiv =  document.createElement("div")
+let rightchild = document.createElement("div")
+parentdiv.classList.add("parentdiv")
+childdiv.classList.add("child")
+childdiv.classList.add("childleft")
+childdiv.classList.add("rightchild")
+rightchild.style.background = "black"
+rightchild.style.width = "50%"
+childleftdiv.style.width = "50%"
+childleftdiv.style.backgroundColor = "black"
+childleftdiv.style.position = "relative"
+childdiv.style.right = "0px"
+document.body.appendChild(parentdiv)
+parentdiv.appendChild(childdiv)
+childdiv.appendChild(childleftdiv)
+childdiv.appendChild(rightchild)
+
+let cursor = document.querySelector(".cursor")
+childleftdiv.addEventListener("mouseenter",function(){
+    childdiv.classList.add("animate")
+    
+})
+childleftdiv.addEventListener("mouseleave",function(){
+    childdiv.classList.remove("animate")
+    
+})
+rightchild.addEventListener("mouseenter",function(){
+    childdiv.classList.add("animateleft")
+    gspa.to(cursor,{
+        
+        opacity:1,
+    })
+})
+rightchild.addEventListener("mouseleave",function(){
+    childdiv.classList.remove("animateleft")
+})
+document.body.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        opacity:1,
+    })
+})
+childdiv.addEventListener('mouseenter',function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        opacity:1,
+        backgroundColor:"yellow",
+        
+    })
+})
+childdiv.addEventListener('mouseleave',function(){
+    
+    gsap.to(cursor,{
+        opacity:0,
+        backgroundColor:"transparent",
+    })
+})
+
+// secodn card create
+let secondchildcard = document.createElement("div")
+let secondleft = document.createElement("div")
+let secondright =  document.createElement("div")
+
+// Append the elements
+// let newparent = document.createElement("div")
+document.body.appendChild(parentdiv)
+parentdiv.classList.add("newparent")
+parentdiv.appendChild(secondchildcard)
+secondchildcard.appendChild(secondleft)
+secondchildcard.appendChild(secondright)
+secondchildcard.classList.add("child")
+secondleft.style.backgroundColor = "black"
+secondleft.style.width = "50%"
+secondright.style.backgroundColor = "black"
+secondright.style.width = "50%"
+
+secondleft.addEventListener("mouseenter",function(){
+    secondchildcard.classList.add("animate1")
+    
+})
+secondleft.addEventListener("mouseleave",function(){
+    secondchildcard.classList.remove("animate1")
+    
+})
+secondright.addEventListener("mouseenter",function(){
+    secondchildcard.classList.add("animateleft1")
+    gspa.to(cursor,{
+        backgroundColor:"orange",
+        opacity:1,
+    })
+})
+secondright.addEventListener("mouseleave",function(){
+    secondchildcard.classList.remove("animateleft1")
+})
+secondchildcard.addEventListener('mouseenter',function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        opacity:1,
+        backgroundColor:"orange",
+        
+    })
+})
+secondchildcard.addEventListener('mouseleave',function(){
+    
+    gsap.to(cursor,{
+        opacity:0,
+        backgroundColor:"transparent",
+    })
+})
+const tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: ".center-blue-shoe",
         start: "center center",
@@ -118,7 +233,7 @@ const tl4 = gsap.timeline({
         //},
     },
 })
-tl4.to(".center-blue-shoe", {
+tl5.to(".center-blue-shoe", {
     y: 700,
     duration:4,
     ease:"none"
