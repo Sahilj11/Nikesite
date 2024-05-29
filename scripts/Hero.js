@@ -70,7 +70,6 @@ tl.to(".centerfirst #heading",{
     scrollTrigger:{
         trigger:"#heading",
         scroller:"body",
-        
         start:"top -80%",
         end:"top 40%",
         scrub:5,
@@ -154,7 +153,7 @@ childleftdiv.addEventListener("mouseleave",function(){
 rightchild.addEventListener("mouseenter",function(){
     childdiv.classList.add("animateleft")
     gspa.to(cursor,{
-        backgroundColor:"green",
+        
         opacity:1,
     })
 })
@@ -184,6 +183,7 @@ childdiv.addEventListener('mouseleave',function(){
         backgroundColor:"transparent",
     })
 })
+
 // secodn card create
 let secondchildcard = document.createElement("div")
 let secondleft = document.createElement("div")
