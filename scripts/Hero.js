@@ -65,41 +65,46 @@ leftarr.addEventListener("click",function(){
 })
 
 tl.to(".centerfirst #heading",{
+    y:-100,
     opacity:0,
-    duration:1,
+    duration:0.4,
     scrollTrigger:{
         trigger:"#heading",
-        //scroller:"body",
-        start:"top -80%",
-        end:"top 40%",
+        scroller:"body",
+        start:"top -30%",
+        end:"top 30%",
         scrub:5,
+       
     },
    
 })
 
 tl.to(".secondcard #head",{
+    y:-100,
     opacity:0,
-    duration:1,
+    duration:0.4,
     scrollTrigger:{
         trigger:"#head",
-        //scroller:"body",
-      
-        start:"top -80%",
-        end:"top 40%",
+        scroller:"body",
+       
+        start:"top -30%",
+        end:"top 30%",
         scrub:5,
     },
     
 })
 
 tl.to(".thirdcard #headingthird",{
+    y:-100,
     opacity:0,
-    duration:1,
+    duration:0.4,
     scrollTrigger:{
         trigger:"#headingthird",
-        //scroller:"body",
-        start:"top -80%",
+        scroller:"body",
+        start:"top -30%",
         end:"top 40%",
         scrub:5,
+        
     },
     
    

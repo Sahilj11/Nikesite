@@ -9,7 +9,8 @@
 
 body {
     overflow-x: hidden;
-    background: white;
+  
+    /* background-color: rgba(5, 19, 49, 0.311); */
 }
 
 nav {
@@ -28,6 +29,7 @@ i {
     font-size: 30px;
     font-weight: 700;
     color: black;
+    cursor: pointer;
 }
 
 .nike-headline {
@@ -253,15 +255,12 @@ i {
 }
 
 .centerfirst {
-    border: 1px solid transparent;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
 }
 
-.firstcard img {
-    width: 35%;
-    height: 90%;
-}
+
 #heading{
     font-size: 3rem;
     line-height: 4rem;
@@ -275,9 +274,11 @@ i {
     line-height: 4rem;
 }
 .first-video {
-    width: 50vw;
-    height: 85vh;
+    width: 30vw;
+    height: 70vh;
     object-fit: cover;
+    border-radius: 1%;
+    overflow: hidden;
 }
 
 .firstcard h1 {
@@ -288,16 +289,12 @@ i {
 }
 
 .centersecond {
-    border: 1px solid transparent;
+    /* border: 2px solid pink; */
     display: flex;
-
     justify-content: space-around;
 }
 
-.secondcard img {
-    width: 35%;
-    height: 90%;
-}
+
 
 .secondcard h1 {
     padding: 2rem;
@@ -312,10 +309,6 @@ i {
     justify-content: space-around;
 }
 
-.thirdcard img {
-    width: 35%;
-    height: 90%;
-}
 
 .thirdcard h1 {
     padding: 2rem;
@@ -328,6 +321,7 @@ i {
     /*background-color: rgba(21, 15, 35, 0.735);*/
     /*position: absolute;*/
     /*bottom: -540%;*/
+    background-color: rgb(5, 12, 27);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -339,12 +333,12 @@ i {
     width: 80%;
     min-width: 80%;
     filter: drop-shadow(4px);
-    /*border: 1px solid white;*/
+
     border-radius: 1rem;
     overflow: hidden;
-    height: 60%;
+    height: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     transition: all 1s;
     margin-top: 2rem;
@@ -353,7 +347,7 @@ i {
     transition: all 1s;
     transform: skewY(2deg);
     /* border-left: 2px solid yellow; */
-    box-shadow: -10px -10px 10px -5px rgba(194, 197, 39, 0.879);
+    box-shadow: -10px -10px 10px -4px rgb(213, 216, 18);
 }
 
 .animate1 {
@@ -361,21 +355,21 @@ i {
     /* transform: skewX(3deg); */
     transform: skewY(2deg);
     /* border-left: 2px solid yellow; */
-    box-shadow: -10px -10px 10px -5px rgba(228, 141, 27, 0.986);
+    box-shadow: -10px -10px 10px -4px rgba(25, 234, 28, 0.986);
 }
 
 .animateleft {
     transition: all 1s;
     transform: skewY(-2deg);
     /* box-shadow: 0px 0px 10px green; */
-    box-shadow: 10px 10px 10px -5px rgba(194, 197, 39, 0.879);
+    box-shadow: 10px 10px 10px -4px rgb(18, 180, 208);
 }
 
 .animateleft1 {
     transition: all 1s;
     transform: skewY(-2deg);
     /* box-shadow: 0px 0px 10px green; */
-    box-shadow: 10px 10px 10px -5px rgba(228, 141, 27, 0.986);
+    box-shadow: 10px 10px 10px -4px rgb(231, 140, 21);
 }
 
 .cursor {
@@ -390,17 +384,18 @@ i {
     /* box-shadow: 0px 0px 10px orangered; */
 }
 
-.newparent {
+/* .newparent {
     /* background-color: rgba(134, 117, 172, 0.735); */
     /*position: absolute;*/
     /* bottom: -530%; */
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-}
+    background-color: red; */
+/* } */ 
 
 .child2 {
     width: 80%;
@@ -410,21 +405,40 @@ i {
     overflow: hidden;
     height: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
     transition: all 1s;
     /* margin-top: 2rem; */
 }
+.nike-heading{
+    /* background-color: yellowgreen; */
+    position:absolute;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+    top:0;
+    left:0;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
 
-.section4 {
-    background-color: rgba(105, 61, 209, 0.735);
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    bottom: -340%;
-    padding: 1px;
 }
 
 .content {
     margin-top: 3rem;
+}
+.firstleftdiv{
+    backdrop-filter: blur(20px);
+}
+.section4 {
+    border: none;
+    background-color: rgb(5, 12, 27);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: -619.9%;
+    padding: 1px;
+    z-index: -1;
+    color: white;
 }
