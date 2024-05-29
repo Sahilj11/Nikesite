@@ -243,15 +243,12 @@ i {
 
 /* section 3 code */
 .section3 {
-    width: 100vw;
-    height: 100vh;
     padding: 3rem;
 }
 .card {
     /* background-color: red; */
-    width: 100vw;
-    height: 100vh;
     position: sticky;
+    margin-bottom: 5rem;
     top: 14%;
 }
 
@@ -285,7 +282,6 @@ i {
 
 .firstcard h1 {
     padding: 2rem;
-    /* border: 2px solid green; */
     width: 30%;
     letter-spacing: 4px;
     line-height: 2.5rem;
@@ -305,7 +301,6 @@ i {
 
 .secondcard h1 {
     padding: 2rem;
-    /* border: 2px solid green; */
     width: 30%;
     letter-spacing: 4px;
     line-height: 2.5rem;
@@ -331,8 +326,8 @@ i {
 }
 .parentdiv {
     /*background-color: rgba(21, 15, 35, 0.735);*/
-    position: absolute;
-    bottom: -540%;
+    /*position: absolute;*/
+    /*bottom: -540%;*/
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -397,7 +392,7 @@ i {
 
 .newparent {
     /* background-color: rgba(134, 117, 172, 0.735); */
-    position: absolute;
+    /*position: absolute;*/
     /* bottom: -530%; */
     width: 100vw;
     height: 100vh;
