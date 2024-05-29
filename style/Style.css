@@ -5,11 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Work Sans";
+    cursor: default;
 }
 
 body {
     overflow-x: hidden;
-    background: white;
+
+    background: black;
+    /* background-color: rgba(5, 19, 49, 0.311); */
 }
 
 nav {
@@ -18,7 +21,7 @@ nav {
     position: fixed;
     margin: 10px;
     width: 100vw;
-    color: black;
+    color: white;
     z-index: 50;
     padding: 1rem;
 }
@@ -27,7 +30,8 @@ nav h1,
 i {
     font-size: 30px;
     font-weight: 700;
-    color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .nike-headline {
@@ -243,69 +247,61 @@ i {
 
 /* section 3 code */
 .section3 {
-    width: 100vw;
-    height: 100vh;
     padding: 3rem;
 }
+
 .card {
     /* background-color: red; */
-    width: 100vw;
-    height: 100vh;
     position: sticky;
+    color: white;
+    margin-bottom: 5rem;
     top: 14%;
 }
 
 .centerfirst {
-    border: 1px solid transparent;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
 }
 
-.firstcard img {
-    width: 35%;
-    height: 90%;
-}
-#heading{
+#heading {
     font-size: 3rem;
     line-height: 4rem;
 }
-#head{
+
+#head {
     font-size: 3rem;
     line-height: 4rem;
 }
-#headingthird{
+
+#headingthird {
     font-size: 3rem;
     line-height: 4rem;
 }
+
 .first-video {
-    width: 50vw;
-    height: 85vh;
+    width: 30vw;
+    height: 70vh;
     object-fit: cover;
+    border-radius: 1%;
+    overflow: hidden;
 }
 
 .firstcard h1 {
     padding: 2rem;
-    /* border: 2px solid green; */
     width: 30%;
     letter-spacing: 4px;
     line-height: 2.5rem;
 }
 
 .centersecond {
-    border: 1px solid transparent;
+    /* border: 2px solid pink; */
     display: flex;
-
     justify-content: space-around;
-}
-
-.secondcard img {
-    width: 35%;
-    height: 90%;
 }
 
 .secondcard h1 {
     padding: 2rem;
-    /* border: 2px solid green; */
     width: 30%;
     letter-spacing: 4px;
     line-height: 2.5rem;
@@ -317,11 +313,6 @@ i {
     justify-content: space-around;
 }
 
-.thirdcard img {
-    width: 35%;
-    height: 90%;
-}
-
 .thirdcard h1 {
     padding: 2rem;
     /* border: 2px solid green; */
@@ -329,35 +320,62 @@ i {
     letter-spacing: 4px;
     line-height: 2.5rem;
 }
+
 .parentdiv {
-    background-color: rgba(21, 15, 35, 0.735);
-    position: absolute;
-    bottom: -540%;
-    width: 100vw;
-    height: 100vh;
+    /*background-color: rgba(21, 15, 35, 0.735);*/
+    /*position: absolute;*/
+    /*bottom: -540%;*/
+    /*background-color: rgb(5, 12, 27);*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    position: relative;
     display: flex;
     align-items: center;
+    gap: 30px;
     justify-content: center;
     flex-direction: column;
 }
+
+.torch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    /* Diameter of the torch light */
+    height: 200px;
+    /* Diameter of the torch light */
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.5) 40%,
+            rgba(0, 0, 0, 0) 60%);
+    pointer-events: none;
+    /* Prevent the torch div from blocking mouse events */
+    transform: translate(-50%,
+            -50%);
+    /* Center the torch div at the cursor position */
+}
+
 .child {
-    width: 80%;
-    min-width: 80%;
-    border: 1px solid black;
+    width: 60%;
+    /*min-width: 80%;*/
+    filter: drop-shadow(4px);
+    background-color: black;
+    /*backdrop-filter: blur(20px);*/
     border-radius: 1rem;
-    overflow: hidden;
-    height: 60%;
+    /*overflow: hidden;*/
+    /*height: 100vh;*/
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     transition: all 1s;
     margin-top: 2rem;
 }
+
 .animate {
     transition: all 1s;
     transform: skewY(2deg);
     /* border-left: 2px solid yellow; */
-    box-shadow: -10px -10px 10px -5px rgba(194, 197, 39, 0.879);
+    box-shadow: -10px -10px 10px -4px rgb(213, 216, 18);
 }
 
 .animate1 {
@@ -365,21 +383,21 @@ i {
     /* transform: skewX(3deg); */
     transform: skewY(2deg);
     /* border-left: 2px solid yellow; */
-    box-shadow: -10px -10px 10px -5px rgba(228, 141, 27, 0.986);
+    box-shadow: -10px -10px 10px -4px rgba(25, 234, 28, 0.986);
 }
 
 .animateleft {
     transition: all 1s;
     transform: skewY(-2deg);
     /* box-shadow: 0px 0px 10px green; */
-    box-shadow: 10px 10px 10px -5px rgba(194, 197, 39, 0.879);
+    box-shadow: 10px 10px 10px -4px rgb(18, 180, 208);
 }
 
 .animateleft1 {
     transition: all 1s;
     transform: skewY(-2deg);
     /* box-shadow: 0px 0px 10px green; */
-    box-shadow: 10px 10px 10px -5px rgba(228, 141, 27, 0.986);
+    box-shadow: 10px 10px 10px -4px rgb(231, 140, 21);
 }
 
 .cursor {
@@ -394,17 +412,6 @@ i {
     /* box-shadow: 0px 0px 10px orangered; */
 }
 
-.newparent {
-    /* background-color: rgba(134, 117, 172, 0.735); */
-    position: absolute;
-    /* bottom: -530%; */
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .child2 {
     width: 80%;
@@ -414,21 +421,82 @@ i {
     overflow: hidden;
     height: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
     transition: all 1s;
     /* margin-top: 2rem; */
 }
 
-.section4 {
-    background-color: rgba(105, 61, 209, 0.735);
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    bottom: -340%;
-    padding: 1px;
+.nike-heading {
+    position: absolute;
+    top: 0.1rem;
+    margin-bottom: 1rem;
+    left:25%;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
 }
 
 .content {
     margin-top: 3rem;
 }
+
+#firstleftdiv {
+    /*backdrop-filter: blur(20px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#secondleftdiv{
+    /*backdrop-filter: blur(20px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.section5{
+    display: grid;
+    margin-top: 10rem;
+    grid-template-rows: 1fr 2fr;
+    padding: 3rem;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: "heading" "shop";
+}
+.storeheading{
+    color:white;
+    grid-area: "heading";
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+    font-weight: bolder;
+}
+.shopcard-container{
+    grid-area: "shop";
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.storecard{
+    border: 3px solid white;
+    height: 100%;
+    width: 40%;
+}
+.circle-container{
+    position: relative;
+    height: 50%;
+    display: flex;
+    width: 50%;
+}
+.circleshop{
+    width: 70px;
+    margin: 3rem;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
