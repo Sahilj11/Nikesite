@@ -330,7 +330,7 @@ i {
     line-height: 2.5rem;
 }
 .parentdiv {
-    background-color: rgba(21, 15, 35, 0.735);
+    /*background-color: rgba(21, 15, 35, 0.735);*/
     position: absolute;
     bottom: -540%;
     width: 100vw;
@@ -343,7 +343,8 @@ i {
 .child {
     width: 80%;
     min-width: 80%;
-    border: 1px solid black;
+    filter: drop-shadow(4px);
+    /*border: 1px solid white;*/
     border-radius: 1rem;
     overflow: hidden;
     height: 60%;

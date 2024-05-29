@@ -69,7 +69,7 @@ tl.to(".centerfirst #heading",{
     duration:1,
     scrollTrigger:{
         trigger:"#heading",
-        scroller:"body",
+        //scroller:"body",
         start:"top -80%",
         end:"top 40%",
         scrub:5,
@@ -82,7 +82,7 @@ tl.to(".secondcard #head",{
     duration:1,
     scrollTrigger:{
         trigger:"#head",
-        scroller:"body",
+        //scroller:"body",
       
         start:"top -80%",
         end:"top 40%",
@@ -96,7 +96,7 @@ tl.to(".thirdcard #headingthird",{
     duration:1,
     scrollTrigger:{
         trigger:"#headingthird",
-        scroller:"body",
+        //scroller:"body",
         start:"top -80%",
         end:"top 40%",
         scrub:5,
@@ -106,25 +106,11 @@ tl.to(".thirdcard #headingthird",{
 })
 
 
-let parentdiv = document.createElement("div")
-let childdiv = document.createElement("div")
-let childleftdiv =  document.createElement("div")
-let rightchild = document.createElement("div")
-parentdiv.classList.add("parentdiv")
-childdiv.classList.add("child")
-childdiv.classList.add("childleft")
-childdiv.classList.add("rightchild")
-rightchild.style.background = "black"
-rightchild.style.width = "50%"
-childleftdiv.style.width = "50%"
-childleftdiv.style.backgroundColor = "black"
-childleftdiv.style.position = "relative"
-childdiv.style.right = "0px"
-document.body.appendChild(parentdiv)
-parentdiv.appendChild(childdiv)
-childdiv.appendChild(childleftdiv)
-childdiv.appendChild(rightchild)
+let parentdiv = document.querySelector(".parentdiv")
+let childdiv = document.querySelector(".child")
 
+const childleftdiv = document.getElementById("firstleftdiv")
+const rightchild = document.getElementById("firstrightdiv")
 let cursor = document.querySelector(".cursor")
 childleftdiv.addEventListener("mouseenter",function(){
     childdiv.classList.add("animate")
@@ -136,7 +122,7 @@ childleftdiv.addEventListener("mouseleave",function(){
 })
 rightchild.addEventListener("mouseenter",function(){
     childdiv.classList.add("animateleft")
-    gspa.to(cursor,{
+    gsap.to(cursor,{
         
         opacity:1,
     })
@@ -169,22 +155,9 @@ childdiv.addEventListener('mouseleave',function(){
 })
 
 // secodn card create
-let secondchildcard = document.createElement("div")
-let secondleft = document.createElement("div")
-let secondright =  document.createElement("div")
-
-// Append the elements
-// let newparent = document.createElement("div")
-document.body.appendChild(parentdiv)
-parentdiv.classList.add("newparent")
-parentdiv.appendChild(secondchildcard)
-secondchildcard.appendChild(secondleft)
-secondchildcard.appendChild(secondright)
-secondchildcard.classList.add("child")
-secondleft.style.backgroundColor = "black"
-secondleft.style.width = "50%"
-secondright.style.backgroundColor = "black"
-secondright.style.width = "50%"
+let secondchildcard = document.querySelector("#secondcard")
+const secondleft = document.getElementById("secondleftdiv")
+const secondright = document.getElementById("secondrightdiv")
 
 secondleft.addEventListener("mouseenter",function(){
     secondchildcard.classList.add("animate1")
@@ -196,7 +169,7 @@ secondleft.addEventListener("mouseleave",function(){
 })
 secondright.addEventListener("mouseenter",function(){
     secondchildcard.classList.add("animateleft1")
-    gspa.to(cursor,{
+    gsap.to(cursor,{
         backgroundColor:"orange",
         opacity:1,
     })
@@ -227,10 +200,6 @@ const tl5 = gsap.timeline({
         end: "top 10%",
         scrub: 4,
         pin: true,
-        //toggleActions:"restart pause none none",
-        //markers: {
-        //    fontSize: "3rem",
-        //},
     },
 })
 tl5.to(".center-blue-shoe", {
