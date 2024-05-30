@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Work Sans";
+    cursor: default;
 }
 
 body {
     overflow-x: hidden;
-  
+
+    background: black;
     /* background-color: rgba(5, 19, 49, 0.311); */
 }
 
@@ -19,7 +21,7 @@ nav {
     position: fixed;
     margin: 10px;
     width: 100vw;
-    color: black;
+    color: white;
     z-index: 50;
     padding: 1rem;
 }
@@ -28,7 +30,7 @@ nav h1,
 i {
     font-size: 30px;
     font-weight: 700;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -247,9 +249,11 @@ i {
 .section3 {
     padding: 3rem;
 }
+
 .card {
     /* background-color: red; */
     position: sticky;
+    color: white;
     margin-bottom: 5rem;
     top: 14%;
 }
@@ -260,19 +264,21 @@ i {
     justify-content: space-around;
 }
 
+#heading {
+    font-size: 3rem;
+    line-height: 4rem;
+}
 
-#heading{
+#head {
     font-size: 3rem;
     line-height: 4rem;
 }
-#head{
+
+#headingthird {
     font-size: 3rem;
     line-height: 4rem;
 }
-#headingthird{
-    font-size: 3rem;
-    line-height: 4rem;
-}
+
 .first-video {
     width: 30vw;
     height: 70vh;
@@ -294,8 +300,6 @@ i {
     justify-content: space-around;
 }
 
-
-
 .secondcard h1 {
     padding: 2rem;
     width: 30%;
@@ -309,7 +313,6 @@ i {
     justify-content: space-around;
 }
 
-
 .thirdcard h1 {
     padding: 2rem;
     /* border: 2px solid green; */
@@ -317,32 +320,57 @@ i {
     letter-spacing: 4px;
     line-height: 2.5rem;
 }
+
 .parentdiv {
     /*background-color: rgba(21, 15, 35, 0.735);*/
     /*position: absolute;*/
     /*bottom: -540%;*/
-    background-color: rgb(5, 12, 27);
-    width: 100vw;
-    height: 100vh;
+    /*background-color: rgb(5, 12, 27);*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    position: relative;
     display: flex;
     align-items: center;
+    gap: 30px;
     justify-content: center;
     flex-direction: column;
 }
-.child {
-    width: 80%;
-    min-width: 80%;
-    filter: drop-shadow(4px);
 
+.torch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    /* Diameter of the torch light */
+    height: 200px;
+    /* Diameter of the torch light */
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.5) 40%,
+            rgba(0, 0, 0, 0) 60%);
+    pointer-events: none;
+    /* Prevent the torch div from blocking mouse events */
+    transform: translate(-50%,
+            -50%);
+    /* Center the torch div at the cursor position */
+}
+
+.child {
+    width: 60%;
+    /*min-width: 80%;*/
+    filter: drop-shadow(4px);
+    background-color: black;
+    /*backdrop-filter: blur(20px);*/
     border-radius: 1rem;
-    overflow: hidden;
-    height: 50%;
+    /*overflow: hidden;*/
+    /*height: 100vh;*/
     display: flex;
     justify-content: space-between;
     position: relative;
     transition: all 1s;
     margin-top: 2rem;
 }
+
 .animate {
     transition: all 1s;
     transform: skewY(2deg);
@@ -384,18 +412,6 @@ i {
     /* box-shadow: 0px 0px 10px orangered; */
 }
 
-/* .newparent {
-    /* background-color: rgba(134, 117, 172, 0.735); */
-    /*position: absolute;*/
-    /* bottom: -530%; */
-    /* width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: red; */
-/* } */ 
 
 .child2 {
     width: 80%;
@@ -410,35 +426,77 @@ i {
     transition: all 1s;
     /* margin-top: 2rem; */
 }
-.nike-heading{
-    /* background-color: yellowgreen; */
-    position:absolute;
-    padding: 1rem;
-    margin-left: 10rem;
-    margin-top: 2rem;
+
+.nike-heading {
+    position: absolute;
+    top: 0.1rem;
+    margin-bottom: 1rem;
+    left:25%;
     letter-spacing: 0.1rem;
-    top:0;
-    left:0;
     font-weight: 400;
     font-size: 2.5rem;
     color: white;
-
 }
 
 .content {
     margin-top: 3rem;
 }
-.firstleftdiv{
-    backdrop-filter: blur(20px);
+
+#firstleftdiv {
+    /*backdrop-filter: blur(20px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
-.section4 {
-    border: none;
-    background-color: rgb(5, 12, 27);
+
+#secondleftdiv{
+    /*backdrop-filter: blur(20px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.section5{
+    display: grid;
+    margin-top: 10rem;
+    grid-template-rows: 1fr 2fr;
+    padding: 3rem;
     height: 100vh;
-    width: 100vw;
-    position: absolute;
-    bottom: -619.9%;
-    padding: 1px;
-    z-index: -1;
-    color: white;
+    gap: 1rem;
+    grid-template-areas: "heading" "shop";
 }
+.storeheading{
+    color:white;
+    grid-area: "heading";
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+    font-weight: bolder;
+}
+.shopcard-container{
+    grid-area: "shop";
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.storecard{
+    border: 3px solid white;
+    height: 100%;
+    width: 40%;
+}
+.circle-container{
+    position: relative;
+    height: 50%;
+    display: flex;
+    width: 50%;
+}
+.circleshop{
+    width: 70px;
+    margin: 3rem;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
