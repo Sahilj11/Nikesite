@@ -212,3 +212,56 @@ tl5.to(".center-blue-shoe", {
     duration:4,
     ease:"none"
 });
+
+
+// seciton 5 code
+let circle1 = document.querySelector("#circle1")
+let circle2 =  document.querySelector("#circle2")
+let circle3 =  document.querySelector("#circle3")
+let newimg =  document.querySelector(".newimg")
+let malltitle = document.querySelector(".mall-title")
+let malldesc =  document.querySelector(".mall-desc")
+circle1.addEventListener("mouseenter",function(){
+    newimg.src = "./images/Malltwo.avif"
+    malltitle.innerHTML = "CHENNAI"
+    malldesc.innerHTML = "Avenue And Phoenix Markcity"
+    circle1.style.backgroundColor = "#c0dc4f7d"
+    gsap.from(newimg,{
+        duration:0.3,
+        opacity:0,
+        scale:0
+    })
+})
+circle1.addEventListener("mouseleave",function(){
+    circle1.style.backgroundColor = ""
+})
+circle2.addEventListener("mouseenter",function(){
+    newimg.src = "./images/Mallthree.jpg"
+    malltitle.innerHTML = "HYDERABAD"
+    malldesc.innerHTML = "Inorbit Mall And GVK One Mall"
+    circle2.style.backgroundColor = "#c0dc4f7d"
+    gsap.from(newimg,{
+        duration:0.3,
+        opacity:0,
+        scale:0,
+    })
+})
+circle2.addEventListener("mouseleave",function(){
+    circle2.style.backgroundColor = ""
+})
+
+circle3.addEventListener("mouseenter",function(){
+    newimg.src = "./images/Mall6.avif"
+    malltitle.innerHTML = "MUMBAI"
+    malldesc.innerHTML = "Infinity Mall in Malad"
+    circle3.style.backgroundColor = "#c0dc4f7d"
+    gsap.from(newimg,{
+        duration:0.3,
+        opacity:0,
+        scale:0,
+    })
+    
+})
+circle3.addEventListener("mouseleave",function(){
+    circle3.style.backgroundColor = ""
+})

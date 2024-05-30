@@ -25,7 +25,9 @@ nav {
     z-index: 50;
     padding: 1rem;
 }
-
+#menu{
+    color: white;
+}
 nav h1,
 i {
     font-size: 30px;
@@ -337,6 +339,7 @@ i {
 }
 
 .torch {
+    /* background-color: red; */
     position: absolute;
     top: 0;
     left: 0;
@@ -356,7 +359,7 @@ i {
 }
 
 .child {
-    width: 60%;
+    width: 70%;
     /*min-width: 80%;*/
     filter: drop-shadow(4px);
     background-color: black;
@@ -445,7 +448,8 @@ i {
 #firstleftdiv {
     /*backdrop-filter: blur(20px);*/
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-top: 3rem;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -475,28 +479,91 @@ i {
     letter-spacing: 0.2px;
     font-weight: bolder;
 }
+.storeheading h1{
+    font-weight: 400;
+}
 .shopcard-container{
     grid-area: "shop";
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 80%;
+    /* background-color: red; */
 }
 .storecard{
     border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -6px rgb(21, 207, 231);
     height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.mall-img{
+    /* background-color:yellow; */
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+.mall-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.text{
+    /* background-color: pink; */
     width: 40%;
+    padding:3rem;
+    color: white;
+    
+}
+.mall-title{
+    font-weight: 400;
+    color: white;
+    font-family: Oswald;
+    font-size: 2.4rem;
+}
+.mall-desc{
+    /* background-color: red; */
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  
 }
 .circle-container{
     position: relative;
-    height: 50%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     width: 50%;
+    position: sticky;
+    /* background-color: rgb(52, 19, 199); */
 }
 .circleshop{
     width: 70px;
     margin: 3rem;
-    height: 70px;
+    height: 110px;
     border: 2px solid white;
     border-radius: 50%;
+    cursor: pointer;
 }
-
+#circle1{
+    margin-left: 40%;   
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 0));
+}
+#circle2{
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 0));
+    margin-left: 20%;
+}
+#circle3{
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 0));
+    margin-left: 40%;
+}
+footer{
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+    color:white;
+}
