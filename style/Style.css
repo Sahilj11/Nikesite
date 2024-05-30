@@ -551,14 +551,14 @@ i {
 }
 #circle1{
     margin-left: 40%;   
-    filter: drop-shadow(7px 7px 23px rgb(255, 213, 0));
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
 }
 #circle2{
-    filter: drop-shadow(7px 7px 23px rgb(255, 213, 0));
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
     margin-left: 20%;
 }
 #circle3{
-    filter: drop-shadow(7px 7px 23px rgb(255, 213, 0));
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
     margin-left: 40%;
 }
 footer{

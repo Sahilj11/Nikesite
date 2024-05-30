@@ -227,7 +227,7 @@ circle1.addEventListener("mouseenter",function(){
     malldesc.innerHTML = "Avenue And Phoenix Markcity"
     circle1.style.backgroundColor = "#c0dc4f7d"
     gsap.from(newimg,{
-        duration:0.3,
+        duration:0.2,
         opacity:0,
         scale:0
     })
@@ -241,7 +241,7 @@ circle2.addEventListener("mouseenter",function(){
     malldesc.innerHTML = "Inorbit Mall And GVK One Mall"
     circle2.style.backgroundColor = "#c0dc4f7d"
     gsap.from(newimg,{
-        duration:0.3,
+        duration:0.2,
         opacity:0,
         scale:0,
     })
@@ -256,7 +256,7 @@ circle3.addEventListener("mouseenter",function(){
     malldesc.innerHTML = "Infinity Mall in Malad"
     circle3.style.backgroundColor = "#c0dc4f7d"
     gsap.from(newimg,{
-        duration:0.3,
+        duration:0.2,
         opacity:0,
         scale:0,
     })
