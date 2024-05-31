@@ -379,6 +379,8 @@ i {
     transform: skewY(2deg);
     /* border-left: 2px solid yellow; */
     box-shadow: -10px -10px 10px -4px rgb(213, 216, 18);
+    
+    
 }
 
 .animate1 {
@@ -393,14 +395,16 @@ i {
     transition: all 1s;
     transform: skewY(-2deg);
     /* box-shadow: 0px 0px 10px green; */
-    box-shadow: 10px 10px 10px -4px rgb(18, 180, 208);
+    /* box-shadow: 10px 10px 10px -4px rgb(18, 180, 208); */
+    filter: drop-shadow(10px 10px 10px rgb(18,180,208));
 }
 
 .animateleft1 {
     transition: all 1s;
     transform: skewY(-2deg);
     /* box-shadow: 0px 0px 10px green; */
-    box-shadow: 10px 10px 10px -4px rgb(231, 140, 21);
+    /* box-shadow: 10px 10px 10px -4px rgb(231, 140, 21); */
+    filter: drop-shadow(10px 10px 10px rgb(213,140,21));
 }
 
 .cursor {
@@ -566,18 +570,24 @@ footer{
     height: 60vh;
     background-color: black;
     color:white;
+   
+  
 }
 .footer-container{
     /* background-color: yellow; */
     width: 100vw;
     height: 60vh;
     display: flex;
+    padding: 1rem;
     justify-content: space-around;
+ 
 }
 .leftcontainer{
     /* background-color: red; */
-    width: 50%;
+    width: 42%;
     height: 100%;
+    /* background-color: #7fe1b3; */
+    margin-left: -10px;
 }
 .nike{
     /* background-color: red; */
@@ -588,13 +598,13 @@ footer{
     font-family: Oswald;
 }
 .rightcontainer{
-    /* background-color: #343292; */
-    width: 50%;
+    /* background-color: #817fe1; */
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     height: 100%;
-    padding: 2rem;
+    padding: 2.9rem;
 }
 .icon-heading{
     padding: 1rem;
@@ -658,4 +668,5 @@ li{
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
+   
 }
