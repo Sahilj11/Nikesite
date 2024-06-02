@@ -82,6 +82,7 @@ i {
 }
 
 .right-shoe-1 {
+    
     width: 250px;
     height: 250px;
     grid-area: rightShoes;
@@ -248,6 +249,7 @@ i {
 }
 
 /* section 3 code */
+
 .section3 {
     padding: 3rem;
 }
@@ -324,12 +326,7 @@ i {
 }
 
 .parentdiv {
-    /*background-color: rgba(21, 15, 35, 0.735);*/
-    /*position: absolute;*/
-    /*bottom: -540%;*/
-    /*background-color: rgb(5, 12, 27);*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
+
     position: relative;
     display: flex;
     align-items: center;
@@ -486,6 +483,7 @@ i {
 .storeheading h1{
     font-weight: 400;
 }
+
 .shopcard-container{
     grid-area: "shop";
     display: flex;
@@ -669,4 +667,397 @@ li{
     justify-content: center;
     font-size: 1.3rem;
    
+}
+
+/* Media query for repsonsiveness */
+@media only screen and (min-width:330px) and (max-width:767px) {
+    
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin: 10px;
+    width: 100vw;
+    color: white;
+    z-index: 50;
+    padding: 0.5rem;
+   
+}
+#menu{
+    color: white;
+}
+nav h1,
+i {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+
+.nike-headline {
+    font-size: 2.4rem;
+}
+
+.wraper {
+    width: 100vw;
+    height: 100vh;
+}
+.ri-menu-3-line{
+    /* background-color: pink; */
+    color: white;
+    z-index: 66888888;
+}
+.hero-section {
+    /*background: linear-gradient(to bottom, #3432aa 24%, #151444);*/
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "leftShoes midShoe rightShoes";
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.center-hero-tag {
+    grid-area: midShoe;
+    position: relative;
+    margin-top: 20%;
+    z-index: 100;
+    /* background-color: yellow; */
+}
+
+.left-shoe-1 {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    top: 9rem;
+    grid-area: leftShoes;
+    transform: rotate(60deg);
+    /* background-color: aqua; */
+    left: 60%;
+}
+
+.left-shoe-2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 8rem;
+    left: 60%;
+    grid-area: leftShoes;
+    transform: rotate(-200deg);
+    /* background-color: #343292; */
+}
+
+.right-shoe-1 {
+    width:150px;
+    height: 150px;
+    grid-area: rightShoes;
+    transform: rotate(-30deg);
+    opacity: 0;
+    /* background-color: #b6a7f5; */
+}
+
+.center-blue-shoe {
+    width: 200px;
+    height: 200px;
+    transform: rotate(-30deg);
+    z-index: 2;
+    /* background-color: aqua; */
+    margin-top: 5rem;
+}
+
+.blue-shoe-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: palevioletred; */
+}
+#nike-text{
+    /* color: yellow; */
+    font-size:3rem;
+    /* background-color: red; */
+}
+.center-hero-tag{
+    /* background-color: peru; */
+    width: 70vw;
+    
+}
+
+
+.product-detail-page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* background-color: #7ac227; */
+}
+
+.blue-shoe-div {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    width: 100vw;
+}
+
+.blue-shoe-div h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #343292, #b6a7f5);
+    background-clip: text;
+    color: transparent;
+    z-index: 200;
+}
+
+.section3 {
+    padding: 1rem;
+    /* background-color: red; */
+    margin-top: 2rem;
+    width: 100vw;
+}
+
+.card {
+    /* background-color:yellow; */
+    position: sticky;
+    color: white;
+    margin-bottom: 5rem;
+    top: 14%;
+}
+
+.centerfirst {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#heading {
+    font-size:2rem;
+    line-height:3rem;
+}
+
+#head {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#headingthird {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.first-video {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 1%;
+    overflow: hidden;
+    background-attachment: yellow;
+}
+
+.firstcard h1 {
+    padding: 2rem;
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+
+.centersecond {
+    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondcard h1 {
+    padding: 2rem;
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+
+.centerthird {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirdcard h1 {
+    padding: 2rem;
+    /* border: 2px solid green; */
+    width: 30%;
+    letter-spacing: 4px;
+    line-height: 2.5rem;
+}
+.nike-heading{
+    /* background-color: red; */
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    left:0px;
+    font-size: 1.7rem;
+}
+.child {
+    width: 70%;
+    height: 30%;
+    background-color: yellow;
+    filter: drop-shadow(4px);
+    background-color: black;
+    /*backdrop-filter: blur(20px);*/
+    border-radius: 1rem;
+    /*overflow: hidden;*/
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: all 1s;
+}
+.childleft{
+    /* background-color: pink; */
+    width: 100%;
+    position: relative;
+    left:10%;
+    margin-top: 0;
+    height: 30vh;
+}
+
+#firstleftdiv {
+    /*backdrop-filter: blur(20px);*/
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 1px;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+    /* background-color: #c1121f; */
+}
+#firstrightdiv{
+    width: 30%;
+}
+#first-vdo{
+    height: 100%;
+}
+#paratext{
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+#secondcard{
+    /* background-color: yellow; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    left:10%;
+    overflow: hidden;
+}
+#secondleftdiv{
+    /*backdrop-filter: blur(20px);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: red; */
+    
+}
+#sec-vdo{
+  height: 100%;
+}
+
+.shopcard-container{
+    grid-area: "shop";
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    /* background-color: red; */
+    
+}
+.storecard{
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -6px rgb(21, 207, 231);
+    height: 100%;
+    width: 70%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: pink; */
+    height: 80%;
+}
+.mall-img{
+    /* background-color:yellow; */
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.mall-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 24px;
+    overflow: hidden;
+    
+}
+.text{
+   
+    /* background-color: rgb(55, 221, 21); */
+    background-color: red;
+    width: 30%;
+    color: white;  
+    position: relative;
+    height: 100%;
+}
+.mall-title{
+    font-weight: 400;
+    color: white;
+    font-family: Oswald;
+    font-size: 1rem;
+    position: absolute;
+    top:0;
+    left:0;
+}
+body{
+    overflow-x: hidden;
+}
+.mall-desc{
+    /* background-color: red; */
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    position: absolute;
+    left:0;
+  
+}
+.circle-container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: sticky;
+    /* background-color: rgb(52, 19, 199); */
+}
+.circleshop{
+    width: 10vw;
+    margin: 3rem;
+    height: 36vh;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    /* background-color: #c1121f; */
+}
+#circle1{
+    margin-left: 40%;   
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
+}
+#circle2{
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
+    margin-left: 20%;
+}
+#circle3{
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
+    margin-left: 40%;
+}
 }
