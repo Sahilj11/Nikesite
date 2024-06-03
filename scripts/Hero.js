@@ -1,9 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
-let menu = document.querySelector(".items-right i");
-let cross = document.querySelector(".full i");
+let menu = document.querySelector(".ri-menu-3-line");
+let cross = document.querySelector("#cross");
 var nav = document.querySelector("nav");
 let sideMenu = document.querySelector(".full");
-var tl = gsap.timeline({ paused: true });
+var tl = gsap.timeline();
 
 gsap.from(".nav-heading", {
     y: "50vh",
@@ -32,11 +32,13 @@ tl.from(".full h4", {
 tl.from(".full i", {
     opacity: "0",
 });
-
+ tl.pause()
 menu.addEventListener("click", function() {
-    tl.play();
+     console.log("hello");
+     tl.play();
 });
-cross.addEventListener("click", function() {
+document.querySelector(".ri-close-line").addEventListener("click", function() {
+    console.log("hello");
     tl.reverse();
 });
 
