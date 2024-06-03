@@ -238,7 +238,7 @@ body {
     right: -40%;
     backdrop-filter: blur(20px);
     padding: 150px 60px;
-    z-index: 500;
+    z-index: 1001;
 }
 
 .full h4 {
