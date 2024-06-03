@@ -16,11 +16,9 @@
 body {
     overflow-x: hidden;
 
-    background: white;
+    background: black;
     /* background-color: rgba(5, 19, 49, 0.311); */
 }
-
-
 
 .navcontainer {
     width: 100%;
@@ -29,9 +27,8 @@ body {
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    background:transparent;
+    background: transparent;
     z-index: 999;
-    
 }
 
 .nav-heading {
@@ -44,8 +41,6 @@ body {
     padding: 1rem;
     z-index: 1000;
 }
-
-
 
 .nav-container {
     width: 100%;
@@ -390,16 +385,6 @@ body {
     line-height: 2.5rem;
 }
 
-.parentdiv {
-    position: relative;
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-direction: column;
-}
-
 .torch {
     /* background-color: red; */
     position: absolute;
@@ -432,6 +417,98 @@ body {
     justify-content: space-between;
     position: relative;
     transition: all 1s;
+}
+
+.parent-div {
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+#nike-program {
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+.parent-div2 {
+    width: 100%;
+    /* background-color: #c1121f; */
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    margin-top: 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cards {
+    /* background-color: #b6a7f5; */
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.left-card {
+    width: 50%;
+}
+
+.my-video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.right-card {
+    width: 50%;
+    padding: 2rem;
+}
+
+.Made-text {
+    font-size: 2rem;
+    color: white;
+}
+
+#content {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    color: white;
+}
+
+.cards {
+    /* background-color: #b6a7f5; */
+    width: 80%;
+    height: 90%;
+    display: flex;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.left-card {
+    width: 100%;
+}
+
+.my-video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.right-card {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.Made-text {
+    font-size: 2rem;
 }
 
 .video-over-text {
@@ -535,61 +612,6 @@ body {
     gap: 20px;
 }
 
-.section5 {
-    display: grid;
-    margin-top: 10rem;
-    grid-template-rows: 1fr 2fr;
-    padding: 3rem;
-    height: 100vh;
-    gap: 1rem;
-    grid-template-areas: "heading" "shop";
-}
-
-.storeheading {
-    color: white;
-    grid-area: "heading";
-    font-size: 2rem;
-    letter-spacing: 0.2px;
-    font-weight: bolder;
-}
-
-.storeheading h1 {
-    font-weight: 400;
-}
-
-.shopcard-container {
-    grid-area: "shop";
-    display: flex;
-    flex-direction: row;
-    height: 80%;
-    /* background-color: red; */
-}
-
-.storecard {
-    border: 3px solid white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px -6px rgb(21, 207, 231);
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.mall-img {
-    /* background-color:yellow; */
-    width: 60%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.mall-img img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    padding: 1rem;
-    border-radius: 24px;
-    overflow: hidden;
-}
 
 .text {
     /* background-color: pink; */
@@ -598,53 +620,6 @@ body {
     color: white;
 }
 
-.mall-title {
-    font-weight: 400;
-    color: white;
-    font-family: Oswald;
-    font-size: 2.4rem;
-}
-
-.mall-desc {
-    /* background-color: red; */
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    line-height: 1.9rem;
-}
-
-.circle-container {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    position: sticky;
-    /* background-color: rgb(52, 19, 199); */
-}
-
-.circleshop {
-    width: 70px;
-    margin: 3rem;
-    height: 110px;
-    border: 2px solid white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#circle1 {
-    margin-left: 40%;
-    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
-}
-
-#circle2 {
-    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
-    margin-left: 20%;
-}
-
-#circle3 {
-    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
-    margin-left: 40%;
-}
 
 footer {
     width: 100vw;
@@ -759,5 +734,110 @@ li {
     justify-content: center;
     font-size: 1.3rem;
 }
+.mall-desc {
+  position: relative;
+}
 
+#content {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.section5{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entire-mall{
+    box-shadow: 5px 6px 6px rebeccapurple;
+    width: 70%;
+    height: 50%;
+    display: flex; 
+    margin-top: 2rem; 
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+.mall-desc{
+    /* background-color: #c1121f; */
+    width: 100%;
+    display: flex;
+   
+    justify-content: space-between; 
+}
+.left-mall{
+    width: 50%;
+    padding: 2rem 2rem;
+    font-size: 1rem;
+    color: white;
+}
+.left-mall p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    
+}
+.right-mall{
+    width: 50%;
+}
+.right-mall img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.circle-div{
+    /* background-color: aqua; */
+    width: 60%;
+    margin-top: 2rem;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.cir{
+    color: white;
+}
+#circle1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
+}
+#circle2{
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
+#circle3{
+    filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
 /* Media query for repsonsiveness */
