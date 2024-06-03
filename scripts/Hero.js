@@ -208,7 +208,7 @@ const tl5 = gsap.timeline({
     },
 })
 tl5.to(".center-blue-shoe", {
-    y: 700,
+    y: 740,
     duration:4,
     ease:"none"
 });
@@ -264,4 +264,47 @@ circle3.addEventListener("mouseenter",function(){
 })
 circle3.addEventListener("mouseleave",function(){
     circle3.style.backgroundColor = ""
+})
+
+const videoOverLay1 = document.querySelector("#video-over1")
+const tl6  = gsap.timeline({
+    scrollTrigger: {
+        trigger: videoOverLay1,
+        start: "center center",
+        end: "bottom 5%",
+        scrub: true,
+        pin: false,
+    },
+})
+tl6.to(videoOverLay1,{
+    scale:3,
+    opacity:0
+})
+const videoOverLay2 = document.querySelector("#video-over2")
+const tl7  = gsap.timeline({
+    scrollTrigger: {
+        trigger: videoOverLay2,
+        start: "center center",
+        end: "bottom 5%",
+        scrub: true,
+        pin: false,
+    },
+})
+tl7.to(videoOverLay2,{
+    scale:3,
+    opacity:0
+})
+const videoOverLay3 = document.querySelector("#video-over3")
+const tl8  = gsap.timeline({
+    scrollTrigger: {
+        trigger: videoOverLay3,
+        start: "center center",
+        end: "bottom 5%",
+        scrub: true,
+        pin: false,
+    },
+})
+tl8.to(videoOverLay3,{
+    scale:3,
+    opacity:0
 })
