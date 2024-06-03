@@ -20,9 +20,7 @@ body {
     /* background-color: rgba(5, 19, 49, 0.311); */
 }
 
-.nav-container {
-    background: black;
-}
+
 
 .navcontainer {
     width: 100%;
@@ -31,8 +29,9 @@ body {
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background:transparent;
     z-index: 999;
+    
 }
 
 .nav-heading {
@@ -46,16 +45,7 @@ body {
     z-index: 1000;
 }
 
-.nike-headline {
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 50%;*/
-    /*color: white;*/
-    /*transform: translateX(-50%);*/
-    /*margin-top: 1rem;*/
-    /*padding: 1rem;*/
-    /*z-index: 1000;*/
-}
+
 
 .nav-container {
     width: 100%;
