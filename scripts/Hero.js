@@ -6,7 +6,22 @@ var leftarr = document.getElementById("leftarrow")
 var nav = document.querySelector("nav")
 let sideMenu = document.querySelector(".full")
 var tl =  gsap.timeline({paused:true})
+const tl9 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".hero-section",
+                start: "top bottom",
+                endTrigger: ".hero-section",
+                end: "top center",
+                scrub: true,
+            }
+        });
 
+        // Add animations to the timeline
+        tl9.from(".nike-headline", {
+            y: "50vh",
+            scale: 6,
+            yPercent: -50,
+        });
 tl.to(".full",{
     right:"0",
     duration:0.4
@@ -308,3 +323,4 @@ tl8.to(videoOverLay3,{
     scale:3,
     opacity:0
 })
+ 
