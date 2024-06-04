@@ -18,3 +18,5 @@ tl.to(".center-blue-shoe", {
     duration:4,
     ease:"none"
 });
+
+
