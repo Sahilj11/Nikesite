@@ -19,7 +19,11 @@
     --clr-3:#0e4b50;
     --clr-4:#2d8f85;
     --clr-5:#637c54;
-    --clr-6:#000;
+    --clr-6:#040404;
+    --clr-7:#d0ce48;
+    --clr-8:#2ad0c2;
+    --clr-9:#6148bc;
+    
 
 }
 
@@ -476,15 +480,16 @@ body {
     justify-content: space-between;
     position: relative;
     transition: all 1s;
+    
 }
 
 .parent-div {
     width: 100%;
-    /* background-color: yellow; */
     display: flex;
     align-items: center;
     height: 90vh;
     flex-direction: column;
+    
 }
 
 #nike-program {
@@ -500,23 +505,52 @@ body {
 
 .parent-div2 {
     width: 100%;
-    /* background-color: #c1121f; */
+    
     display: flex;
     align-items: center;
     height: 90vh;
     margin-top: 5rem;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.cards {
-  
-    width: 80%;
-    height: 80%;
-    display: flex;
-    margin-top: 2rem;
     
 }
+.cards {
+    
+    /* background-color: yellow; */
+   border-radius: 2rem;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    margin-top: 0rem; 
+    
+}
+
+.cards{
+    /* box-shadow: 5px 6px 6px rebeccapurple; */
+    background: var(--clr-6);
+}
+.cards::before,
+.cards::after{
+    content: "";
+    position: absolute;
+    inset: -0.4rem;
+    z-index: -1;
+    background: conic-gradient( from var(--gradient-angle),
+       var(--clr-7),
+        var(--clr-8),
+        var(--clr-4),
+        var(--clr-9));
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+}
+.cards::after{
+    filter: blur(0.5rem);
+}
+@keyframes rotation {
+    0% {--gradient-angle:0deg}
+    100% {--gradient-angle:360deg}
+}
+
+
 
 .left-card {
     width: 50%;
@@ -526,6 +560,7 @@ body {
     width: 100%;
     object-fit: cover;
     height: 100%;
+    border-radius: 2rem;
 }
 
 .right-card {
@@ -853,7 +888,7 @@ li {
     animation: rotation 20s linear infinite;
 }
 .entire-mall::after{
-    filter: blur(3.5rem);
+    filter: blur(1rem);
 }
 @keyframes rotation {
     0% {--gradient-angle:0deg}
@@ -949,7 +984,7 @@ li {
 }
 @media (max-width:350px) {
     .circle-div{
-        background-color: rgb(168, 207, 11);
+        /* background-color: rgb(168, 207, 11); */
         flex-wrap: wrap;
         justify-content: space-between;
         height: 50%;
@@ -957,7 +992,7 @@ li {
         margin-top: 80%;
     }
     .left-mall{
-        background-color: red;
+        /* background-color: red; */
         position: relative;
     }
     .malltitle{
