@@ -8,6 +8,20 @@
     font-family: "Work Sans";
     cursor: default;
 }
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+:root{
+    --clr-1:#052b2f;
+    --clr-2:#073438;
+    --clr-3:#0e4b50;
+    --clr-4:#2d8f85;
+    --clr-5:#637c54;
+    --clr-6:#000;
+
+}
 
 /*div {*/
 /*    border: 2px solid red;*/
@@ -16,7 +30,7 @@
 body {
     overflow-x: hidden;
 
-    background: black;
+    background:var(--clr-6);
     /* background-color: rgba(5, 19, 49, 0.311); */
 }
 
@@ -161,10 +175,54 @@ body {
     .video-over-text {
         font-size: 2rem;
     }
-
+   
     #product-title {
         font-size: 2rem;
     }
+   
+   .failory-logo-image{
+    /* background-color: green; */
+    width: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+   
+   }
+   .footer-column{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .w-row{
+    /* background-color: #1284c1; */
+    display: flex;
+    flex-wrap: wrap;
+    
+   }
+   
+   span{    
+/* background-color: yellow; */
+    font-size: 0.6rem;
+   }
+   .footer-social-network-icons img{
+    
+    width: 15px;
+   }
+   #follow{
+    font-size: 0.8rem;
+   }
+   #other{
+    font-size: 0.8rem;
+   }
+   #learn{
+    font-size: 0.8rem;
+   }
+   #email{
+    font-size: 0.8rem;
+   }
+   #lorem{
+    font-size: 0.8rem;
+   }
 }
 
 .image-shoe-container1 {
@@ -222,6 +280,7 @@ body {
 .ri-menu-3-line {
     color: black;
     padding-right: 40px;
+    cursor: pointer;
 }
 
 .full {
@@ -432,6 +491,11 @@ body {
     text-align: center;
     margin-top: 2rem;
     color: white;
+    background:linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
 }
 
 .parent-div2 {
@@ -446,11 +510,12 @@ body {
 }
 
 .cards {
-    /* background-color: #b6a7f5; */
+  
     width: 80%;
     height: 80%;
     display: flex;
     margin-top: 2rem;
+    
 }
 
 .left-card {
@@ -567,7 +632,15 @@ body {
     opacity: 0;
     /* box-shadow: 0px 0px 10px orangered; */
 }
-
+.nears-store{
+    color: white;
+    background:linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    font-size: 3rem;
+}
 .child2 {
     width: 80%;
     min-width: 80%;
@@ -755,14 +828,36 @@ li {
 }
 
 .entire-mall{
-    box-shadow: 5px 6px 6px rebeccapurple;
-    width: 70%;
+    /* box-shadow: 5px 6px 6px rebeccapurple; */
+    width: 60%;
     height: 50%;
     display: flex; 
     margin-top: 2rem; 
-    border: 1px solid white;
-    border-radius: 10px;
+    /* border: 1px solid white; */
+    position: relative;
+    border-radius: 0.5rem;
     padding: 0.3rem;
+    background: var(--clr-1);
+}
+.entire-mall::before,
+.entire-mall::after{
+    content: "";
+    position: absolute;
+    inset: -0.4rem;
+    z-index: -1;
+    background: conic-gradient( from var(--gradient-angle),
+       var(--clr-3),
+        var(--clr-4),
+        var(--clr-5));
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+}
+.entire-mall::after{
+    filter: blur(3.5rem);
+}
+@keyframes rotation {
+    0% {--gradient-angle:0deg}
+    100% {--gradient-angle:360deg}
 }
 .mall-desc{
     /* background-color: #c1121f; */
@@ -773,7 +868,7 @@ li {
 }
 .left-mall{
     width: 50%;
-    padding: 2rem 2rem;
+    padding: 1rem 0rem;
     font-size: 1rem;
     color: white;
 }
@@ -793,52 +888,91 @@ li {
     
 }
 .circle-div{
-    /* background-color: aqua; */
-    width: 60%;
+    /* background-color: rgb(255, 196, 0); */
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     gap:10px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2rem;
     
 }
-.cir{
-    color: white;
-}
+
 #circle1{ 
     display: flex;
     align-items: center;
     justify-content: center;
-    width:5rem;
-    height: 5rem;
+    flex-wrap: wrap;
+    width:3rem;
+    height: 3rem;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
+    font-size: 0.6rem;
+    cursor: pointer;
     filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
 }
 #circle2{
     filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    cursor: pointer;
+    height: 3rem;
+    flex-wrap: wrap;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
+    font-size: 0.6rem;
 }
 #circle3{
     filter: drop-shadow(7px 7px 23px rgb(255, 213, 1));
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
     border-radius: 50%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
+    font-size: 0.6rem;
+}
+.cir{
+    font-size: 0.6rem;
+    color: white;
+}
+@media (max-width:350px) {
+    .circle-div{
+        background-color: rgb(168, 207, 11);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 50%;
+        width: 20%;
+        margin-top: 80%;
+    }
+    .left-mall{
+        background-color: red;
+        position: relative;
+    }
+    .malltitle{
+        /* background-color: #343292; */
+        padding: 0;
+        position: absolute;
+        left:0%;
+        margin-bottom: 3rem;
+    }
+    .mall-desc2{
+        /* background-color: rebeccapurple; */
+        position: absolute;
+        left: 0%;
+        
+    }
 }
 /* Media query for repsonsiveness */
 div.container-footer.w-container {
