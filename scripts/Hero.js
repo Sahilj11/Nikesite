@@ -131,7 +131,7 @@ const tl5 = gsap.timeline({
     },
 });
 tl5.to(".center-blue-shoe", {
-    y: "+=105vh",
+    y: "+=110vh",
     duration: 4,
     ease: "none",
 });
