@@ -9,10 +9,6 @@
     cursor: default;
 }
 
-div {
-    border: 2px solid red;
-}
-
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -37,30 +33,36 @@ div {
 
 body {
     overflow-x: hidden;
-
-    background: var(--clr-6);
+    background: #120b5b;
+    /*background: var(--clr-6);*/
     /* background-color: rgba(5, 19, 49, 0.311); */
 }
 
 .navcontainer {
     width: 100%;
-    height: 100px;
+    height: 50px;
+    backdrop-filter: blur(30px);
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    padding-inline: 10px;
+    background: white;
     z-index: 999;
 }
-
+.items-right{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav-heading {
     position: fixed;
     top: 0;
     left: 50%;
     color: black;
     transform: translateX(-50%);
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 0.4rem;
     z-index: 1000;
 }
 
@@ -68,12 +70,16 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: black;
+    background: white;
 }
 
 .hero-section {
     height: 100vh;
     display: grid;
+    background: rgb(70, 119, 187);
+    background: linear-gradient(180deg,
+            rgba(70, 119, 187, 1) 0%,
+            rgba(18, 11, 91, 1) 100%);
     grid-template-areas: "leftShoes midShoe rightShoes";
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;
@@ -276,6 +282,7 @@ body {
     height: 100vh;
     justify-content: center;
     /*background-color: #151444;*/
+    background: #120b5b;
 }
 
 .blue-shoe-div {
@@ -304,8 +311,8 @@ body {
 
 .ri-menu-3-line {
     color: black;
-    padding-right: 40px;
     cursor: pointer;
+    scale: 1.4;
 }
 
 .full {
@@ -1050,7 +1057,9 @@ li {
         left: 0%;
     }
 }
-
+.footer-cont{
+    background: #0d093b;
+}
 /* Media query for repsonsiveness */
 div.container-footer.w-container {
     box-sizing: border-box;
@@ -1060,7 +1069,6 @@ div.container-footer.w-container {
     padding-bottom: 40px;
     padding-top: 70px;
 }
-
 div.container-footer.w-container:after {
     clear: both;
     content: " ";

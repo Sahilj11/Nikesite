@@ -7,9 +7,9 @@ var tl = gsap.timeline();
 
 gsap.from(".nav-heading", {
     y: "50vh",
-    scale: 5,
+    scale: 4,
     yPercent: -50,
-    color:"white",
+    color:"black",
     scrollTrigger: {
         trigger: ".hero-section",
         start: "top bottom",
