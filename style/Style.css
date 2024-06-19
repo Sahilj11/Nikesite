@@ -32,7 +32,7 @@
 /*}*/
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background: #120b5b;
     /*background: var(--clr-6);*/
     /* background-color: rgba(5, 19, 49, 0.311); */
@@ -40,6 +40,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 .navcontainer {
@@ -339,6 +340,7 @@ body {
     backdrop-filter: blur(20px);
     padding: 150px 60px;
     z-index: 1001;
+    
 }
 
 .full h4 {
