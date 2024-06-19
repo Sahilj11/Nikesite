@@ -7,7 +7,7 @@ var tl = gsap.timeline();
 
 gsap.from(".nav-heading", {
     y: "50vh",
-    scale: 6,
+    scale: 5,
     yPercent: -50,
     color:"white",
     scrollTrigger: {
