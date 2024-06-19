@@ -36,6 +36,10 @@ body {
     background: #120b5b;
     /*background: var(--clr-6);*/
     /* background-color: rgba(5, 19, 49, 0.311); */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .navcontainer {
@@ -71,6 +75,10 @@ body {
     
 }
 
+.items-left{
+    /* background-color: red; */
+    width: 4rem;
+}
 .nav-container {
     width: 100%;
     height: 100vh;

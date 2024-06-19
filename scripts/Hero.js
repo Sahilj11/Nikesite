@@ -23,7 +23,7 @@ tl.to(".full", {
     duration: 0.4,
 });
 tl.from(".full h4", {
-    x: 150,
+    x: 30,
     duration: 0.3,
     stagger: 0.3,
     opacity: 0,
@@ -174,6 +174,33 @@ t9.from("#content ,.Made-text",{
         scrub:2,
     }
 })
+t9.from("#nike-program",{
+    opacity:0,
+    x:100,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:"#nike-program",
+        scroller:"body",
+        start:"top 60%",
+        end:"bottom 40%",
+       
+        scrub:2,
+    }
+})
 
 
-
+t9.from(".nears-store",{
+    opacity:0,
+    x:-100,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:".nears-store",
+        scroller:"body",
+        start:"top 60%",
+        end:"bottom 40%",
+       
+        scrub:2,
+    }
+})
