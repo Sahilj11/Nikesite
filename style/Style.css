@@ -32,15 +32,12 @@
 /*}*/
 
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background: #120b5b;
-    /*background: var(--clr-6);*/
-    /* background-color: rgba(5, 19, 49, 0.311); */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
 
 .navcontainer {

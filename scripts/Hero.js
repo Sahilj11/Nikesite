@@ -158,7 +158,6 @@ tl8.to(videoOverLay3, {
     opacity: 0,
 });
 
-
 var t9 = gsap.timeline()
 t9.from("#content ,.Made-text",{
     opacity:0,
