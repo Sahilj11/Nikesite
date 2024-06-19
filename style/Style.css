@@ -49,6 +49,7 @@ body {
     padding-inline: 10px;
     background: white;
     z-index: 999;
+    padding: 2rem;
 }
 .items-right{
     height: 100%;
@@ -1345,4 +1346,37 @@ p.footer-description {
 strong.link-email-footer {
     box-sizing: border-box;
     font-weight: 700;
+}
+
+@media (min-width:350px)and (max-width:450px){
+    .full {
+        height: 100vh;
+        width: 60%;
+        background-color: #2524731f;
+        background-color: red;
+        position: fixed;
+        top: 0;
+        right: -60%;
+        backdrop-filter: blur(20px);
+        padding: 150px 60px;
+        z-index: 1001;
+    }
+    
+    .full h4 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    .full i {
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 5px;
+        color: black;
+    }
 }
