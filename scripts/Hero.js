@@ -23,7 +23,7 @@ tl.to(".full", {
     duration: 0.4,
 });
 tl.from(".full h4", {
-    x: 30,
+    x: 50,
     duration: 0.3,
     stagger: 0.3,
     opacity: 0,
