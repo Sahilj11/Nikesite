@@ -159,7 +159,7 @@ tl8.to(videoOverLay3, {
 });
 
 var t9 = gsap.timeline()
-t9.from("#content ,.Made-text",{
+t9.from("#content .Made-text",{
     opacity:0,
     x:-100,
     duration:2,
@@ -167,13 +167,26 @@ t9.from("#content ,.Made-text",{
     scrollTrigger:{
         trigger:"#content",
         scroller:"body",
+        start:"top 90%",
+        end:"bottom 40%",
+       
+        scrub:2,
+    }
+})
+t9.from(".para",{
+    opacity:0,
+    x:-100,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:".para",
+        scroller:"body",
         start:"top 60%",
         end:"bottom 40%",
        
         scrub:2,
     }
 })
-
 
 var t9 = gsap.timeline()
 t9.from("#content ,.Made-text",{
