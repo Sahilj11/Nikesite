@@ -14,7 +14,9 @@
     initial-value: 0deg;
     inherits: false;
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 :root {
     --clr-1: #052b2f;
     --clr-2: #073438;
