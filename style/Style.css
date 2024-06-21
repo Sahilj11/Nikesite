@@ -39,22 +39,34 @@ body {
 }
 
 .navcontainer {
-    width: 100%;
     height: 50px;
+    width: 100%;
     backdrop-filter: blur(30px);
     display: flex;
     position: fixed;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     padding-inline: 10px;
     background: white;
     z-index: 999;
+    /* background-color: red; */
+    padding: 1.5rem;
+}
+.items-left{  
+    width: 5rem;
 }
 .items-right{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #120b5b;
+}
+#cross{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 .nav-heading {
     position: fixed;
@@ -64,6 +76,7 @@ body {
     transform: translateX(-50%);
     margin-top: 0.4rem;
     z-index: 1000;
+    
 }
 
 .nav-container {
@@ -71,6 +84,7 @@ body {
     height: 100vh;
     position: relative;
     background: white;
+    
 }
 
 .hero-section {
@@ -121,7 +135,7 @@ body {
     display: flex;
     justify-content: center;
     width: 50%;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .hero-tag-container {
@@ -159,7 +173,7 @@ body {
     }
 
     .video-over-text {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     #product-title {
@@ -169,7 +183,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-tag-line {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .video-over-text {
@@ -177,21 +191,21 @@ body {
     }
 
     #product-title {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
 @media (max-width: 576px) {
     .hero-tag-line {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .video-over-text {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     #product-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .failory-logo-image {
@@ -301,6 +315,7 @@ body {
     background-clip: text;
     color: transparent;
     z-index: 2;
+   
 }
 
 #mainshoes {
@@ -338,11 +353,11 @@ body {
     position: absolute;
     top: 5%;
     right: 10%;
-    background-color: white;
+    background-color:rgba(50, 50, 53, 0.432);
     border-radius: 50%;
     cursor: pointer;
-    padding: 5px;
-    color: black;
+    padding: 8px;
+    color: white;
 }
 
 /*::-webkit-scrollbar {*/
@@ -476,25 +491,6 @@ body {
     line-height: 2.5rem;
 }
 
-.torch {
-    /* background-color: red; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    /* Diameter of the torch light */
-    height: 200px;
-    /* Diameter of the torch light */
-    background: radial-gradient(circle,
-            rgba(255, 255, 255, 0.8) 0%,
-            rgba(255, 255, 255, 0.5) 40%,
-            rgba(0, 0, 0, 0) 60%);
-    pointer-events: none;
-    /* Prevent the torch div from blocking mouse events */
-    transform: translate(-50%, -50%);
-    /* Center the torch div at the cursor position */
-}
-
 .child {
     width: 70%;
     /*min-width: 80%;*/
@@ -565,11 +561,11 @@ body {
             var(--clr-4),
             var(--clr-9));
     border-radius: inherit;
-    animation: rotation 20s linear infinite;
+    animation: rotation 10s linear infinite;
 }
 
 .cards::after {
-    filter: blur(0.5rem);
+    filter: blur(0.1rem);
 }
 
 @keyframes rotation {
@@ -652,38 +648,7 @@ body {
 }
 
 .video-div-container {
-    position: relative;
-}
-
-.animate {
-    transition: all 1s;
-    transform: skewY(2deg);
-    /* border-left: 2px solid yellow; */
-    box-shadow: -10px -10px 10px -4px rgb(213, 216, 18);
-}
-
-.animate1 {
-    transition: all 1s;
-    /* transform: skewX(3deg); */
-    transform: skewY(2deg);
-    /* border-left: 2px solid yellow; */
-    box-shadow: -10px -10px 10px -4px rgba(25, 234, 28, 0.986);
-}
-
-.animateleft {
-    transition: all 1s;
-    transform: skewY(-2deg);
-    /* box-shadow: 0px 0px 10px green; */
-    /* box-shadow: 10px 10px 10px -4px rgb(18, 180, 208); */
-    filter: drop-shadow(10px 10px 10px rgb(18, 180, 208));
-}
-
-.animateleft1 {
-    transition: all 1s;
-    transform: skewY(-2deg);
-    /* box-shadow: 0px 0px 10px green; */
-    /* box-shadow: 10px 10px 10px -4px rgb(231, 140, 21); */
-    filter: drop-shadow(10px 10px 10px rgb(213, 140, 21));
+    overflow-x: hidden;
 }
 
 .cursor {
@@ -760,7 +725,6 @@ body {
 }
 
 footer {
-    width: 100vw;
     height: 60vh;
     background-color: black;
     color: white;
@@ -768,7 +732,6 @@ footer {
 
 .footer-container {
     /* background-color: yellow; */
-    width: 100vw;
     height: 60vh;
     display: flex;
     padding: 1rem;
@@ -903,7 +866,7 @@ li {
     position: relative;
     border-radius: 0.5rem;
     padding: 0.3rem;
-    background: var(--clr-1);
+    background: var(--clr-6);
 }
 
 .entire-mall::before,
@@ -913,15 +876,16 @@ li {
     inset: -0.4rem;
     z-index: -1;
     background: conic-gradient(from var(--gradient-angle),
-            var(--clr-3),
-            var(--clr-4),
-            var(--clr-5));
+    var(--clr-7),
+    var(--clr-8),
+    var(--clr-4),
+    var(--clr-9));
     border-radius: inherit;
-    animation: rotation 20s linear infinite;
+    animation: rotation 10s linear infinite;
 }
 
 .entire-mall::after {
-    filter: blur(1rem);
+    filter: blur(0.1rem);
 }
 
 @keyframes rotation {
@@ -974,6 +938,9 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #circle1 {
@@ -1146,7 +1113,7 @@ img.failory-logo-image {
     border-width: 0;
     box-sizing: border-box;
     display: inline-block;
-    float: left;
+    /*float: left;*/
     max-width: 100%;
     vertical-align: middle;
 }
@@ -1341,8 +1308,42 @@ p.footer-description {
     margin-bottom: 16px;
     margin-top: 15px;
 }
-
+p.footer-description a{
+    font-size: 1.2rem;
+}
 strong.link-email-footer {
     box-sizing: border-box;
     font-weight: 700;
+}
+
+@media (min-width:350px)and (max-width:450px){
+    .full {
+        height: 100vh;
+        width: 60%;
+        background-color: #2524731f;
+        position: fixed;
+        top: 0;
+        right: -60%;
+        backdrop-filter: blur(20px);
+        padding: 150px 60px;
+        z-index: 1001;
+    }
+    
+    .full h4 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    .full i {
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        background-color:rgba(50, 50, 53, 0.432);
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 8px;
+        color: white;
+    }
 }

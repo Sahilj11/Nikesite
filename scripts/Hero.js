@@ -42,85 +42,6 @@ document.querySelector(".ri-close-line").addEventListener("click", function() {
     tl.reverse();
 });
 
-
-//let parentdiv = document.querySelector(".parentdiv");
-//let childdiv = document.querySelector(".child");
-//
-//const childleftdiv = document.getElementById("firstleftdiv");
-//const rightchild = document.getElementById("firstrightdiv");
-//let cursor = document.querySelector(".cursor");
-//childleftdiv.addEventListener("mouseenter", function() {
-//    childdiv.classList.add("animate");
-//});
-//childleftdiv.addEventListener("mouseleave", function() {
-//    childdiv.classList.remove("animate");
-//});
-//rightchild.addEventListener("mouseenter", function() {
-//    childdiv.classList.add("animateleft");
-//    gsap.to(cursor, {
-//        opacity: 1,
-//    });
-//});
-//rightchild.addEventListener("mouseleave", function() {
-//    childdiv.classList.remove("animateleft");
-//});
-//document.body.addEventListener("mousemove", function(dets) {
-//    gsap.to(cursor, {
-//        x: dets.x,
-//        y: dets.y,
-//        opacity: 1,
-//    });
-//});
-//childdiv.addEventListener("mouseenter", function(dets) {
-//    gsap.to(cursor, {
-//        x: dets.x,
-//        y: dets.y,
-//        opacity: 1,
-//        backgroundColor: "yellow",
-//    });
-//});
-//childdiv.addEventListener("mouseleave", function() {
-//    gsap.to(cursor, {
-//        opacity: 0,
-//        backgroundColor: "transparent",
-//    });
-//});
-//
-//// secodn card create
-//let secondchildcard = document.querySelector("#secondcard");
-//const secondleft = document.getElementById("secondleftdiv");
-//const secondright = document.getElementById("secondrightdiv");
-//
-//secondleft.addEventListener("mouseenter", function() {
-//    secondchildcard.classList.add("animate1");
-//});
-//secondleft.addEventListener("mouseleave", function() {
-//    secondchildcard.classList.remove("animate1");
-//});
-//secondright.addEventListener("mouseenter", function() {
-//    secondchildcard.classList.add("animateleft1");
-//    gsap.to(cursor, {
-//        backgroundColor: "orange",
-//        opacity: 1,
-//    });
-//});
-//secondright.addEventListener("mouseleave", function() {
-//    secondchildcard.classList.remove("animateleft1");
-//});
-//secondchildcard.addEventListener("mouseenter", function(dets) {
-//    gsap.to(cursor, {
-//        x: dets.x,
-//        y: dets.y,
-//        opacity: 1,
-//        backgroundColor: "orange",
-//    });
-//});
-//secondchildcard.addEventListener("mouseleave", function() {
-//    gsap.to(cursor, {
-//        opacity: 0,
-//        backgroundColor: "transparent",
-//    });
-//});
 const tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: ".center-blue-shoe",
@@ -238,3 +159,61 @@ tl8.to(videoOverLay3, {
 });
 
 
+var t9 = gsap.timeline()
+t9.from("#content ,.Made-text",{
+    opacity:0,
+    x:-100,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:"#content",
+        scroller:"body",
+        start:"top 60%",
+        end:"bottom 70%",
+       
+        scrub:2,
+    }
+})
+
+
+t9.from("#nike-program",{
+    opacity:0,
+    x:-200,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:"#nike-program",
+        scroller:"body",
+        start:"top 60%",
+        end:"bottom 40%",
+        scrub:2,
+    }
+})
+
+t9.from(".nears-store",{
+    opacity:0,
+    x:200,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:".nears-store",
+        scroller:"body",
+        start:"top 80%",
+        end:"bottom 40%",
+        scrub:2,
+    }
+})
+
+t9.from(".cir",{
+    opacity:0,
+    y:50,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:".cir",
+        scroller:"body",
+        start:"top 100%",
+        end:"bottom 100%",
+        scrub:2,
+    }
+})
