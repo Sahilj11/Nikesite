@@ -23,7 +23,7 @@ tl.to(".full", {
     duration: 0.4,
 });
 tl.from(".full h4", {
-    x: 150,
+    x: 50,
     duration: 0.3,
     stagger: 0.3,
     opacity: 0,
@@ -157,6 +157,22 @@ tl8.to(videoOverLay3, {
     scale: 3,
     opacity: 0,
 });
+
+var t9 = gsap.timeline()
+t9.from("#content ,.Made-text",{
+    opacity:0,
+    x:-100,
+    duration:2,
+    stagger:0.9,
+    scrollTrigger:{
+        trigger:"#content",
+        scroller:"body",
+        start:"top 60%",
+        end:"bottom 40%",
+       
+        scrub:2,
+    }
+})
 
 
 var t9 = gsap.timeline()
