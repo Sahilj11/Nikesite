@@ -53,14 +53,10 @@ body {
     background: white;
     z-index: 999;
     /* background-color: red; */
-<<<<<<< HEAD
     padding: 1.5rem;
 }
 .items-left{  
     width: 5rem;
-=======
-    padding: 2rem;
->>>>>>> c4bb6c9eeb711617aaa60f35cb6c52ebe9202b57
 }
 .items-right{
     height: 100%;
@@ -68,14 +64,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #120b5b;
-<<<<<<< HEAD
 }
 #cross{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-=======
->>>>>>> c4bb6c9eeb711617aaa60f35cb6c52ebe9202b57
 }
 
 .nav-heading {
